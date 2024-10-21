@@ -1,0 +1,3 @@
+install:
+php bin/magento setup:install --base-url=http://localhost/magento/pub --db-host=localhost --db-name=magento --db-user=root --db-password= --admin-firstname=super --admin-lastname=admin --admin-email=admin@admin.com --admin-user=admin --admin-password=admin123 --language=en_US --currency=IDR --timezone=Asia/Jakarta --use-rewrites=1 --backend-frontname=admin --search-engine=elasticsearch7 --elasticsearch-host=localhost --elasticsearch-port=9200
+

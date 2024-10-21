@@ -1,0 +1,6 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1729490461;s:6:"expire";i:1729494061;s:4:"tags";s:105:"09f_BLOCK_HTML,09f_CAT_C,09f_CAT_C_3,09f_CAT_C_4,09f_CAT_C_5,09f_CAT_C_6,09f_CAT_C_7,09f_CAT_C_8,09f_MAGE";}
+
+<nav class="navigation" data-action="navigation">
+    <ul data-mage-init='{"menu":{"responsive":true, "expanded":true, "position":{"my":"left top","at":"left bottom"}}}'>
+        <li  class="level0 nav-1 category-item first level-top"><a href="http://localhost/magento/pub/gelang.html"  class="level-top" ><span>Gelang</span></a></li><li  class="level0 nav-2 category-item level-top"><a href="http://localhost/magento/pub/cincin.html"  class="level-top" ><span>Cincin</span></a></li><li  class="level0 nav-3 category-item level-top"><a href="http://localhost/magento/pub/kalung.html"  class="level-top" ><span>Kalung</span></a></li><li  class="level0 nav-4 category-item level-top"><a href="http://localhost/magento/pub/phone-strap.html"  class="level-top" ><span>Phone Strap</span></a></li><li  class="level0 nav-5 category-item level-top"><a href="http://localhost/magento/pub/mask-strap.html"  class="level-top" ><span>Mask Strap</span></a></li><li  class="level0 nav-6 category-item last level-top"><a href="http://localhost/magento/pub/gantungan-kunci.html"  class="level-top" ><span>Gantungan Kunci</span></a></li>            </ul>
+</nav>
