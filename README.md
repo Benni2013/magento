@@ -107,5 +107,13 @@ php bin/magento setup:static-content:deploy -f
 
 **TAMBAHAN PROMPT**
 ~~~
+# prompt reindex
 php bin/magento index:reindex
+
+# prompt Resize semua gambar produk
+php bin/magento catalog:images:resize
+
+# Set permission
+chmod -R 777 pub/media/catalog/product
+
 ~~~
