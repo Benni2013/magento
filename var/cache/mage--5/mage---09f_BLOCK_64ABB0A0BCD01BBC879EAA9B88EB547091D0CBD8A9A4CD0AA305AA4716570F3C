@@ -1,0 +1,1218 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1730256502;s:6:"expire";i:1730342902;s:4:"tags";s:223:"09f_CAT_P,09f_BLOCK_HTML,09f_CAT_P_10,09f_CAT_P_13,09f_CAT_P_15,09f_CAT_P_9,09f_CAT_P_14,09f_CAT_P_2,09f_CAT_P_6,09f_CAT_P_11,09f_CAT_P_12,09f_CAT_P_3,09f_CAT_P_32,09f_CAT_P_34,09f_CAT_P_7,09f_CAT_P_33,09f_CAT_P_35,09f_MAGE";}
+        <ol class="product-items widget-product-carousel">
+                            <li class="product-item">            <div class="product-item-info">
+                <a href="http://localhost/magento/pub/cincin-keroppi.html" class="product-item-photo">
+                    <span class="product-image-container product-image-container-10">
+    <span class="product-image-wrapper">
+        <img class="product-image-photo"
+                        src="http://localhost/magento/pub/media/catalog/product\cache\faa232bf47455e349391ea9b5119deb4\//c/i/cincin_keroppi.jpeg"
+            loading="lazy"
+            width="240"
+            height="300"
+            alt="Cincin&#x20;Keroppi"/></span>
+</span>
+<style>.product-image-container-10 {
+    width: 240px;
+    height: auto;
+    aspect-ratio: 240 / 300;
+}
+.product-image-container-10 span.product-image-wrapper {
+    height: 100%;
+    width: 100%;
+}
+@supports not (aspect-ratio: auto) { 
+    .product-image-container-10 span.product-image-wrapper {
+        padding-bottom: 125%;
+    }
+}</style>                </a>
+                <div class="product-item-details">
+                    <strong class="product-item-name">
+                        <a title="Cincin Keroppi"
+                           href="http://localhost/magento/pub/cincin-keroppi.html"
+                           class="product-item-link">
+                            Cincin Keroppi                        </a>
+                    </strong>
+                                                                
+                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="10" data-price-box="product-id-10">
+    
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+        >
+        <span  id="old-price-10-widget-product-carousel"                data-price-amount="2000"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">IDR 2,000.00</span></span>
+        </span>
+
+</div>
+                    
+                                            <div class="product-item-inner">
+                            <div class="product-item-actions">
+                                                                    <div class="actions-primary">
+                                                                                                                                <form data-role="tocart-form" data-product-sku="200100100008" action="http://localhost/magento/pub/checkout/cart/add/uenc/aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~/product/10/" method="post">
+                                                <input type="hidden" name="product" value="10">
+                                                <input type="hidden" name="uenc" value="aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi9jaGVja291dC9jYXJ0L2FkZC91ZW5jL2FIUjBjRG92TDJ4dlkyRnNhRzl6ZEM5dFlXZGxiblJ2TDNCMVlpOH4vcHJvZHVjdC8xMC8~">
+                                                <input name="form_key" type="hidden" value="3xAhznNntf9UEUzh" />                                                <button type="submit"
+                                                        title="Add to Cart"
+                                                        class="action tocart primary">
+                                                    <span>Add to Cart</span>
+                                                </button>
+                                            </form>
+                                            <script type="text/x-magento-init">
+                                            {
+                                                "[data-role=tocart-form], .form.map.checkout": {
+                                                    "catalogAddToCart": {
+                                                        "product_sku": "200100100008"
+                                                    }
+                                                }
+                                            }
+                                            </script>
+                                                                            </div>
+                                                                                                    <div class="actions-secondary" data-role="add-to-links">
+                                                                                    <a href="#"
+                                               data-post='{"action":"http:\/\/localhost\/magento\/pub\/wishlist\/index\/add\/","data":{"product":10,"uenc":"aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~"}}' class="action towishlist" data-action="add-to-wishlist" title="Add&#x20;to&#x20;Wish&#x20;List">
+                                                <span>Add to Wish List</span>
+                                            </a>
+                                                                                                                                                                        <a href="#" class="action tocompare" data-post='{"action":"http:\/\/localhost\/magento\/pub\/catalog\/product_compare\/add\/","data":{"product":"10","uenc":"aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~"}}' title="Add&#x20;to&#x20;Compare">
+                                                <span>Add to Compare</span>
+                                            </a>
+                                                                            </div>
+                                                            </div>
+                        </div>
+                                    </div>
+            </div>
+                                </li><li class="product-item">            <div class="product-item-info">
+                <a href="http://localhost/magento/pub/cincin-clear-hitam.html" class="product-item-photo">
+                    <span class="product-image-container product-image-container-13">
+    <span class="product-image-wrapper">
+        <img class="product-image-photo"
+                        src="http://localhost/magento/pub/media/catalog/product\cache\faa232bf47455e349391ea9b5119deb4\//c/i/cincin_clear_hitam.jpeg"
+            loading="lazy"
+            width="240"
+            height="300"
+            alt="Cincin&#x20;Clear&#x20;Hitam"/></span>
+</span>
+<style>.product-image-container-13 {
+    width: 240px;
+    height: auto;
+    aspect-ratio: 240 / 300;
+}
+.product-image-container-13 span.product-image-wrapper {
+    height: 100%;
+    width: 100%;
+}
+@supports not (aspect-ratio: auto) { 
+    .product-image-container-13 span.product-image-wrapper {
+        padding-bottom: 125%;
+    }
+}</style>                </a>
+                <div class="product-item-details">
+                    <strong class="product-item-name">
+                        <a title="Cincin Clear Hitam"
+                           href="http://localhost/magento/pub/cincin-clear-hitam.html"
+                           class="product-item-link">
+                            Cincin Clear Hitam                        </a>
+                    </strong>
+                                                                
+                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="13" data-price-box="product-id-13">
+    
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+        >
+        <span  id="old-price-13-widget-product-carousel"                data-price-amount="2000"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">IDR 2,000.00</span></span>
+        </span>
+
+</div>
+                    
+                                            <div class="product-item-inner">
+                            <div class="product-item-actions">
+                                                                    <div class="actions-primary">
+                                                                                                                                <form data-role="tocart-form" data-product-sku="200100100011" action="http://localhost/magento/pub/checkout/cart/add/uenc/aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~/product/13/" method="post">
+                                                <input type="hidden" name="product" value="13">
+                                                <input type="hidden" name="uenc" value="aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi9jaGVja291dC9jYXJ0L2FkZC91ZW5jL2FIUjBjRG92TDJ4dlkyRnNhRzl6ZEM5dFlXZGxiblJ2TDNCMVlpOH4vcHJvZHVjdC8xMy8~">
+                                                <input name="form_key" type="hidden" value="3xAhznNntf9UEUzh" />                                                <button type="submit"
+                                                        title="Add to Cart"
+                                                        class="action tocart primary">
+                                                    <span>Add to Cart</span>
+                                                </button>
+                                            </form>
+                                            <script type="text/x-magento-init">
+                                            {
+                                                "[data-role=tocart-form], .form.map.checkout": {
+                                                    "catalogAddToCart": {
+                                                        "product_sku": "200100100011"
+                                                    }
+                                                }
+                                            }
+                                            </script>
+                                                                            </div>
+                                                                                                    <div class="actions-secondary" data-role="add-to-links">
+                                                                                    <a href="#"
+                                               data-post='{"action":"http:\/\/localhost\/magento\/pub\/wishlist\/index\/add\/","data":{"product":13,"uenc":"aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~"}}' class="action towishlist" data-action="add-to-wishlist" title="Add&#x20;to&#x20;Wish&#x20;List">
+                                                <span>Add to Wish List</span>
+                                            </a>
+                                                                                                                                                                        <a href="#" class="action tocompare" data-post='{"action":"http:\/\/localhost\/magento\/pub\/catalog\/product_compare\/add\/","data":{"product":"13","uenc":"aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~"}}' title="Add&#x20;to&#x20;Compare">
+                                                <span>Add to Compare</span>
+                                            </a>
+                                                                            </div>
+                                                            </div>
+                        </div>
+                                    </div>
+            </div>
+                                </li><li class="product-item">            <div class="product-item-info">
+                <a href="http://localhost/magento/pub/cincin-biru-kuning-merah.html" class="product-item-photo">
+                    <span class="product-image-container product-image-container-15">
+    <span class="product-image-wrapper">
+        <img class="product-image-photo"
+                        src="http://localhost/magento/pub/media/catalog/product\cache\faa232bf47455e349391ea9b5119deb4\//c/i/cincin_biru_kuning_merah_.jpeg"
+            loading="lazy"
+            width="240"
+            height="300"
+            alt="Cincin&#x20;Biru&#x20;Kuning&#x20;Merah"/></span>
+</span>
+<style>.product-image-container-15 {
+    width: 240px;
+    height: auto;
+    aspect-ratio: 240 / 300;
+}
+.product-image-container-15 span.product-image-wrapper {
+    height: 100%;
+    width: 100%;
+}
+@supports not (aspect-ratio: auto) { 
+    .product-image-container-15 span.product-image-wrapper {
+        padding-bottom: 125%;
+    }
+}</style>                </a>
+                <div class="product-item-details">
+                    <strong class="product-item-name">
+                        <a title="Cincin Biru Kuning Merah"
+                           href="http://localhost/magento/pub/cincin-biru-kuning-merah.html"
+                           class="product-item-link">
+                            Cincin Biru Kuning Merah                        </a>
+                    </strong>
+                                                                
+                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="15" data-price-box="product-id-15">
+    
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+        >
+        <span  id="old-price-15-widget-product-carousel"                data-price-amount="2000"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">IDR 2,000.00</span></span>
+        </span>
+
+</div>
+                    
+                                            <div class="product-item-inner">
+                            <div class="product-item-actions">
+                                                                    <div class="actions-primary">
+                                                                                                                                <form data-role="tocart-form" data-product-sku="200100100014" action="http://localhost/magento/pub/checkout/cart/add/uenc/aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~/product/15/" method="post">
+                                                <input type="hidden" name="product" value="15">
+                                                <input type="hidden" name="uenc" value="aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi9jaGVja291dC9jYXJ0L2FkZC91ZW5jL2FIUjBjRG92TDJ4dlkyRnNhRzl6ZEM5dFlXZGxiblJ2TDNCMVlpOH4vcHJvZHVjdC8xNS8~">
+                                                <input name="form_key" type="hidden" value="3xAhznNntf9UEUzh" />                                                <button type="submit"
+                                                        title="Add to Cart"
+                                                        class="action tocart primary">
+                                                    <span>Add to Cart</span>
+                                                </button>
+                                            </form>
+                                            <script type="text/x-magento-init">
+                                            {
+                                                "[data-role=tocart-form], .form.map.checkout": {
+                                                    "catalogAddToCart": {
+                                                        "product_sku": "200100100014"
+                                                    }
+                                                }
+                                            }
+                                            </script>
+                                                                            </div>
+                                                                                                    <div class="actions-secondary" data-role="add-to-links">
+                                                                                    <a href="#"
+                                               data-post='{"action":"http:\/\/localhost\/magento\/pub\/wishlist\/index\/add\/","data":{"product":15,"uenc":"aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~"}}' class="action towishlist" data-action="add-to-wishlist" title="Add&#x20;to&#x20;Wish&#x20;List">
+                                                <span>Add to Wish List</span>
+                                            </a>
+                                                                                                                                                                        <a href="#" class="action tocompare" data-post='{"action":"http:\/\/localhost\/magento\/pub\/catalog\/product_compare\/add\/","data":{"product":"15","uenc":"aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~"}}' title="Add&#x20;to&#x20;Compare">
+                                                <span>Add to Compare</span>
+                                            </a>
+                                                                            </div>
+                                                            </div>
+                        </div>
+                                    </div>
+            </div>
+                                </li><li class="product-item">            <div class="product-item-info">
+                <a href="http://localhost/magento/pub/cincin-pita-cream.html" class="product-item-photo">
+                    <span class="product-image-container product-image-container-9">
+    <span class="product-image-wrapper">
+        <img class="product-image-photo"
+                        src="http://localhost/magento/pub/media/catalog/product\cache\faa232bf47455e349391ea9b5119deb4\//c/i/cincin_pita_cream.jpeg"
+            loading="lazy"
+            width="240"
+            height="300"
+            alt="Cincin&#x20;Pita&#x20;Cream"/></span>
+</span>
+<style>.product-image-container-9 {
+    width: 240px;
+    height: auto;
+    aspect-ratio: 240 / 300;
+}
+.product-image-container-9 span.product-image-wrapper {
+    height: 100%;
+    width: 100%;
+}
+@supports not (aspect-ratio: auto) { 
+    .product-image-container-9 span.product-image-wrapper {
+        padding-bottom: 125%;
+    }
+}</style>                </a>
+                <div class="product-item-details">
+                    <strong class="product-item-name">
+                        <a title="Cincin Pita Cream"
+                           href="http://localhost/magento/pub/cincin-pita-cream.html"
+                           class="product-item-link">
+                            Cincin Pita Cream                        </a>
+                    </strong>
+                                                                
+                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="9" data-price-box="product-id-9">
+    
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+        >
+        <span  id="old-price-9-widget-product-carousel"                data-price-amount="3000"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">IDR 3,000.00</span></span>
+        </span>
+
+</div>
+                    
+                                            <div class="product-item-inner">
+                            <div class="product-item-actions">
+                                                                    <div class="actions-primary">
+                                                                                                                                <form data-role="tocart-form" data-product-sku="200100100007" action="http://localhost/magento/pub/checkout/cart/add/uenc/aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~/product/9/" method="post">
+                                                <input type="hidden" name="product" value="9">
+                                                <input type="hidden" name="uenc" value="aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi9jaGVja291dC9jYXJ0L2FkZC91ZW5jL2FIUjBjRG92TDJ4dlkyRnNhRzl6ZEM5dFlXZGxiblJ2TDNCMVlpOH4vcHJvZHVjdC85Lw~~">
+                                                <input name="form_key" type="hidden" value="3xAhznNntf9UEUzh" />                                                <button type="submit"
+                                                        title="Add to Cart"
+                                                        class="action tocart primary">
+                                                    <span>Add to Cart</span>
+                                                </button>
+                                            </form>
+                                            <script type="text/x-magento-init">
+                                            {
+                                                "[data-role=tocart-form], .form.map.checkout": {
+                                                    "catalogAddToCart": {
+                                                        "product_sku": "200100100007"
+                                                    }
+                                                }
+                                            }
+                                            </script>
+                                                                            </div>
+                                                                                                    <div class="actions-secondary" data-role="add-to-links">
+                                                                                    <a href="#"
+                                               data-post='{"action":"http:\/\/localhost\/magento\/pub\/wishlist\/index\/add\/","data":{"product":9,"uenc":"aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~"}}' class="action towishlist" data-action="add-to-wishlist" title="Add&#x20;to&#x20;Wish&#x20;List">
+                                                <span>Add to Wish List</span>
+                                            </a>
+                                                                                                                                                                        <a href="#" class="action tocompare" data-post='{"action":"http:\/\/localhost\/magento\/pub\/catalog\/product_compare\/add\/","data":{"product":"9","uenc":"aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~"}}' title="Add&#x20;to&#x20;Compare">
+                                                <span>Add to Compare</span>
+                                            </a>
+                                                                            </div>
+                                                            </div>
+                        </div>
+                                    </div>
+            </div>
+                                </li><li class="product-item">            <div class="product-item-info">
+                <a href="http://localhost/magento/pub/cincin-clear-bunga-putih.html" class="product-item-photo">
+                    <span class="product-image-container product-image-container-14">
+    <span class="product-image-wrapper">
+        <img class="product-image-photo"
+                        src="http://localhost/magento/pub/media/catalog/product\cache\faa232bf47455e349391ea9b5119deb4\//c/i/cincin_clear_bunga_putih.jpeg"
+            loading="lazy"
+            width="240"
+            height="300"
+            alt="Cincin&#x20;Clear&#x20;Bunga&#x20;Putih"/></span>
+</span>
+<style>.product-image-container-14 {
+    width: 240px;
+    height: auto;
+    aspect-ratio: 240 / 300;
+}
+.product-image-container-14 span.product-image-wrapper {
+    height: 100%;
+    width: 100%;
+}
+@supports not (aspect-ratio: auto) { 
+    .product-image-container-14 span.product-image-wrapper {
+        padding-bottom: 125%;
+    }
+}</style>                </a>
+                <div class="product-item-details">
+                    <strong class="product-item-name">
+                        <a title="Cincin Clear Bunga Putih"
+                           href="http://localhost/magento/pub/cincin-clear-bunga-putih.html"
+                           class="product-item-link">
+                            Cincin Clear Bunga Putih                        </a>
+                    </strong>
+                                                                
+                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="14" data-price-box="product-id-14">
+    
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+        >
+        <span  id="old-price-14-widget-product-carousel"                data-price-amount="3000"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">IDR 3,000.00</span></span>
+        </span>
+
+</div>
+                    
+                                            <div class="product-item-inner">
+                            <div class="product-item-actions">
+                                                                    <div class="actions-primary">
+                                                                                                                                <form data-role="tocart-form" data-product-sku="200100100012" action="http://localhost/magento/pub/checkout/cart/add/uenc/aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~/product/14/" method="post">
+                                                <input type="hidden" name="product" value="14">
+                                                <input type="hidden" name="uenc" value="aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi9jaGVja291dC9jYXJ0L2FkZC91ZW5jL2FIUjBjRG92TDJ4dlkyRnNhRzl6ZEM5dFlXZGxiblJ2TDNCMVlpOH4vcHJvZHVjdC8xNC8~">
+                                                <input name="form_key" type="hidden" value="3xAhznNntf9UEUzh" />                                                <button type="submit"
+                                                        title="Add to Cart"
+                                                        class="action tocart primary">
+                                                    <span>Add to Cart</span>
+                                                </button>
+                                            </form>
+                                            <script type="text/x-magento-init">
+                                            {
+                                                "[data-role=tocart-form], .form.map.checkout": {
+                                                    "catalogAddToCart": {
+                                                        "product_sku": "200100100012"
+                                                    }
+                                                }
+                                            }
+                                            </script>
+                                                                            </div>
+                                                                                                    <div class="actions-secondary" data-role="add-to-links">
+                                                                                    <a href="#"
+                                               data-post='{"action":"http:\/\/localhost\/magento\/pub\/wishlist\/index\/add\/","data":{"product":14,"uenc":"aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~"}}' class="action towishlist" data-action="add-to-wishlist" title="Add&#x20;to&#x20;Wish&#x20;List">
+                                                <span>Add to Wish List</span>
+                                            </a>
+                                                                                                                                                                        <a href="#" class="action tocompare" data-post='{"action":"http:\/\/localhost\/magento\/pub\/catalog\/product_compare\/add\/","data":{"product":"14","uenc":"aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~"}}' title="Add&#x20;to&#x20;Compare">
+                                                <span>Add to Compare</span>
+                                            </a>
+                                                                            </div>
+                                                            </div>
+                        </div>
+                                    </div>
+            </div>
+                                </li><li class="product-item">            <div class="product-item-info">
+                <a href="http://localhost/magento/pub/gelang-kupu-kupu-pink-putih.html" class="product-item-photo">
+                    <span class="product-image-container product-image-container-2">
+    <span class="product-image-wrapper">
+        <img class="product-image-photo"
+                        src="http://localhost/magento/pub/media/catalog/product\cache\faa232bf47455e349391ea9b5119deb4\//g/e/gelang_kupu-kupu_pink_putih.jpeg"
+            loading="lazy"
+            width="240"
+            height="300"
+            alt="Gelang&#x20;Kupu-Kupu&#x20;Pink&#x20;Putih"/></span>
+</span>
+<style>.product-image-container-2 {
+    width: 240px;
+    height: auto;
+    aspect-ratio: 240 / 300;
+}
+.product-image-container-2 span.product-image-wrapper {
+    height: 100%;
+    width: 100%;
+}
+@supports not (aspect-ratio: auto) { 
+    .product-image-container-2 span.product-image-wrapper {
+        padding-bottom: 125%;
+    }
+}</style>                </a>
+                <div class="product-item-details">
+                    <strong class="product-item-name">
+                        <a title="Gelang Kupu-Kupu Pink Putih"
+                           href="http://localhost/magento/pub/gelang-kupu-kupu-pink-putih.html"
+                           class="product-item-link">
+                            Gelang Kupu-Kupu Pink Putih                        </a>
+                    </strong>
+                                                                
+                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="2" data-price-box="product-id-2">
+    
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+        >
+        <span  id="old-price-2-widget-product-carousel"                data-price-amount="5000"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">IDR 5,000.00</span></span>
+        </span>
+
+</div>
+                    
+                                            <div class="product-item-inner">
+                            <div class="product-item-actions">
+                                                                    <div class="actions-primary">
+                                                                                                                                <form data-role="tocart-form" data-product-sku="100100100002" action="http://localhost/magento/pub/checkout/cart/add/uenc/aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~/product/2/" method="post">
+                                                <input type="hidden" name="product" value="2">
+                                                <input type="hidden" name="uenc" value="aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi9jaGVja291dC9jYXJ0L2FkZC91ZW5jL2FIUjBjRG92TDJ4dlkyRnNhRzl6ZEM5dFlXZGxiblJ2TDNCMVlpOH4vcHJvZHVjdC8yLw~~">
+                                                <input name="form_key" type="hidden" value="3xAhznNntf9UEUzh" />                                                <button type="submit"
+                                                        title="Add to Cart"
+                                                        class="action tocart primary">
+                                                    <span>Add to Cart</span>
+                                                </button>
+                                            </form>
+                                            <script type="text/x-magento-init">
+                                            {
+                                                "[data-role=tocart-form], .form.map.checkout": {
+                                                    "catalogAddToCart": {
+                                                        "product_sku": "100100100002"
+                                                    }
+                                                }
+                                            }
+                                            </script>
+                                                                            </div>
+                                                                                                    <div class="actions-secondary" data-role="add-to-links">
+                                                                                    <a href="#"
+                                               data-post='{"action":"http:\/\/localhost\/magento\/pub\/wishlist\/index\/add\/","data":{"product":2,"uenc":"aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~"}}' class="action towishlist" data-action="add-to-wishlist" title="Add&#x20;to&#x20;Wish&#x20;List">
+                                                <span>Add to Wish List</span>
+                                            </a>
+                                                                                                                                                                        <a href="#" class="action tocompare" data-post='{"action":"http:\/\/localhost\/magento\/pub\/catalog\/product_compare\/add\/","data":{"product":"2","uenc":"aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~"}}' title="Add&#x20;to&#x20;Compare">
+                                                <span>Add to Compare</span>
+                                            </a>
+                                                                            </div>
+                                                            </div>
+                        </div>
+                                    </div>
+            </div>
+                                </li><li class="product-item">            <div class="product-item-info">
+                <a href="http://localhost/magento/pub/gelang-polos-hitam.html" class="product-item-photo">
+                    <span class="product-image-container product-image-container-6">
+    <span class="product-image-wrapper">
+        <img class="product-image-photo"
+                        src="http://localhost/magento/pub/media/catalog/product\cache\faa232bf47455e349391ea9b5119deb4\//b/l/black_white_star_beaded_bracelet.jpeg"
+            loading="lazy"
+            width="240"
+            height="300"
+            alt="Gelang&#x20;Polos&#x20;Hitam&#x20;"/></span>
+</span>
+<style>.product-image-container-6 {
+    width: 240px;
+    height: auto;
+    aspect-ratio: 240 / 300;
+}
+.product-image-container-6 span.product-image-wrapper {
+    height: 100%;
+    width: 100%;
+}
+@supports not (aspect-ratio: auto) { 
+    .product-image-container-6 span.product-image-wrapper {
+        padding-bottom: 125%;
+    }
+}</style>                </a>
+                <div class="product-item-details">
+                    <strong class="product-item-name">
+                        <a title="Gelang Polos Hitam "
+                           href="http://localhost/magento/pub/gelang-polos-hitam.html"
+                           class="product-item-link">
+                            Gelang Polos Hitam                         </a>
+                    </strong>
+                                                                
+                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="6" data-price-box="product-id-6">
+    
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+        >
+        <span  id="old-price-6-widget-product-carousel"                data-price-amount="5000"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">IDR 5,000.00</span></span>
+        </span>
+
+</div>
+                    
+                                            <div class="product-item-inner">
+                            <div class="product-item-actions">
+                                                                    <div class="actions-primary">
+                                                                                                                                <form data-role="tocart-form" data-product-sku="100100100007" action="http://localhost/magento/pub/checkout/cart/add/uenc/aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~/product/6/" method="post">
+                                                <input type="hidden" name="product" value="6">
+                                                <input type="hidden" name="uenc" value="aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi9jaGVja291dC9jYXJ0L2FkZC91ZW5jL2FIUjBjRG92TDJ4dlkyRnNhRzl6ZEM5dFlXZGxiblJ2TDNCMVlpOH4vcHJvZHVjdC82Lw~~">
+                                                <input name="form_key" type="hidden" value="3xAhznNntf9UEUzh" />                                                <button type="submit"
+                                                        title="Add to Cart"
+                                                        class="action tocart primary">
+                                                    <span>Add to Cart</span>
+                                                </button>
+                                            </form>
+                                            <script type="text/x-magento-init">
+                                            {
+                                                "[data-role=tocart-form], .form.map.checkout": {
+                                                    "catalogAddToCart": {
+                                                        "product_sku": "100100100007"
+                                                    }
+                                                }
+                                            }
+                                            </script>
+                                                                            </div>
+                                                                                                    <div class="actions-secondary" data-role="add-to-links">
+                                                                                    <a href="#"
+                                               data-post='{"action":"http:\/\/localhost\/magento\/pub\/wishlist\/index\/add\/","data":{"product":6,"uenc":"aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~"}}' class="action towishlist" data-action="add-to-wishlist" title="Add&#x20;to&#x20;Wish&#x20;List">
+                                                <span>Add to Wish List</span>
+                                            </a>
+                                                                                                                                                                        <a href="#" class="action tocompare" data-post='{"action":"http:\/\/localhost\/magento\/pub\/catalog\/product_compare\/add\/","data":{"product":"6","uenc":"aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~"}}' title="Add&#x20;to&#x20;Compare">
+                                                <span>Add to Compare</span>
+                                            </a>
+                                                                            </div>
+                                                            </div>
+                        </div>
+                                    </div>
+            </div>
+                                </li><li class="product-item">            <div class="product-item-info">
+                <a href="http://localhost/magento/pub/cincin-full-bunga-hitam-putih.html" class="product-item-photo">
+                    <span class="product-image-container product-image-container-11">
+    <span class="product-image-wrapper">
+        <img class="product-image-photo"
+                        src="http://localhost/magento/pub/media/catalog/product\cache\faa232bf47455e349391ea9b5119deb4\//c/i/cincin_full_bunga_hitam_putih.jpeg"
+            loading="lazy"
+            width="240"
+            height="300"
+            alt="Cincin&#x20;Full&#x20;Bunga&#x20;Hitam&#x20;Putih"/></span>
+</span>
+<style>.product-image-container-11 {
+    width: 240px;
+    height: auto;
+    aspect-ratio: 240 / 300;
+}
+.product-image-container-11 span.product-image-wrapper {
+    height: 100%;
+    width: 100%;
+}
+@supports not (aspect-ratio: auto) { 
+    .product-image-container-11 span.product-image-wrapper {
+        padding-bottom: 125%;
+    }
+}</style>                </a>
+                <div class="product-item-details">
+                    <strong class="product-item-name">
+                        <a title="Cincin Full Bunga Hitam Putih"
+                           href="http://localhost/magento/pub/cincin-full-bunga-hitam-putih.html"
+                           class="product-item-link">
+                            Cincin Full Bunga Hitam Putih                        </a>
+                    </strong>
+                                                                
+                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="11" data-price-box="product-id-11">
+    
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+        >
+        <span  id="old-price-11-widget-product-carousel"                data-price-amount="5000"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">IDR 5,000.00</span></span>
+        </span>
+
+</div>
+                    
+                                            <div class="product-item-inner">
+                            <div class="product-item-actions">
+                                                                    <div class="actions-primary">
+                                                                                                                                <form data-role="tocart-form" data-product-sku="200100100009" action="http://localhost/magento/pub/checkout/cart/add/uenc/aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~/product/11/" method="post">
+                                                <input type="hidden" name="product" value="11">
+                                                <input type="hidden" name="uenc" value="aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi9jaGVja291dC9jYXJ0L2FkZC91ZW5jL2FIUjBjRG92TDJ4dlkyRnNhRzl6ZEM5dFlXZGxiblJ2TDNCMVlpOH4vcHJvZHVjdC8xMS8~">
+                                                <input name="form_key" type="hidden" value="3xAhznNntf9UEUzh" />                                                <button type="submit"
+                                                        title="Add to Cart"
+                                                        class="action tocart primary">
+                                                    <span>Add to Cart</span>
+                                                </button>
+                                            </form>
+                                            <script type="text/x-magento-init">
+                                            {
+                                                "[data-role=tocart-form], .form.map.checkout": {
+                                                    "catalogAddToCart": {
+                                                        "product_sku": "200100100009"
+                                                    }
+                                                }
+                                            }
+                                            </script>
+                                                                            </div>
+                                                                                                    <div class="actions-secondary" data-role="add-to-links">
+                                                                                    <a href="#"
+                                               data-post='{"action":"http:\/\/localhost\/magento\/pub\/wishlist\/index\/add\/","data":{"product":11,"uenc":"aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~"}}' class="action towishlist" data-action="add-to-wishlist" title="Add&#x20;to&#x20;Wish&#x20;List">
+                                                <span>Add to Wish List</span>
+                                            </a>
+                                                                                                                                                                        <a href="#" class="action tocompare" data-post='{"action":"http:\/\/localhost\/magento\/pub\/catalog\/product_compare\/add\/","data":{"product":"11","uenc":"aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~"}}' title="Add&#x20;to&#x20;Compare">
+                                                <span>Add to Compare</span>
+                                            </a>
+                                                                            </div>
+                                                            </div>
+                        </div>
+                                    </div>
+            </div>
+                                </li><li class="product-item">            <div class="product-item-info">
+                <a href="http://localhost/magento/pub/cincin-full-bunga-cream-ceylon.html" class="product-item-photo">
+                    <span class="product-image-container product-image-container-12">
+    <span class="product-image-wrapper">
+        <img class="product-image-photo"
+                        src="http://localhost/magento/pub/media/catalog/product\cache\faa232bf47455e349391ea9b5119deb4\//c/i/cincin_full_bunga_cream_ceylon.jpeg"
+            loading="lazy"
+            width="240"
+            height="300"
+            alt="Cincin&#x20;Full&#x20;Bunga&#x20;Cream&#x20;Ceylon"/></span>
+</span>
+<style>.product-image-container-12 {
+    width: 240px;
+    height: auto;
+    aspect-ratio: 240 / 300;
+}
+.product-image-container-12 span.product-image-wrapper {
+    height: 100%;
+    width: 100%;
+}
+@supports not (aspect-ratio: auto) { 
+    .product-image-container-12 span.product-image-wrapper {
+        padding-bottom: 125%;
+    }
+}</style>                </a>
+                <div class="product-item-details">
+                    <strong class="product-item-name">
+                        <a title="Cincin Full Bunga Cream Ceylon"
+                           href="http://localhost/magento/pub/cincin-full-bunga-cream-ceylon.html"
+                           class="product-item-link">
+                            Cincin Full Bunga Cream Ceylon                        </a>
+                    </strong>
+                                                                
+                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="12" data-price-box="product-id-12">
+    
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+        >
+        <span  id="old-price-12-widget-product-carousel"                data-price-amount="5000"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">IDR 5,000.00</span></span>
+        </span>
+
+</div>
+                    
+                                            <div class="product-item-inner">
+                            <div class="product-item-actions">
+                                                                    <div class="actions-primary">
+                                                                                                                                <form data-role="tocart-form" data-product-sku="200100100010" action="http://localhost/magento/pub/checkout/cart/add/uenc/aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~/product/12/" method="post">
+                                                <input type="hidden" name="product" value="12">
+                                                <input type="hidden" name="uenc" value="aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi9jaGVja291dC9jYXJ0L2FkZC91ZW5jL2FIUjBjRG92TDJ4dlkyRnNhRzl6ZEM5dFlXZGxiblJ2TDNCMVlpOH4vcHJvZHVjdC8xMi8~">
+                                                <input name="form_key" type="hidden" value="3xAhznNntf9UEUzh" />                                                <button type="submit"
+                                                        title="Add to Cart"
+                                                        class="action tocart primary">
+                                                    <span>Add to Cart</span>
+                                                </button>
+                                            </form>
+                                            <script type="text/x-magento-init">
+                                            {
+                                                "[data-role=tocart-form], .form.map.checkout": {
+                                                    "catalogAddToCart": {
+                                                        "product_sku": "200100100010"
+                                                    }
+                                                }
+                                            }
+                                            </script>
+                                                                            </div>
+                                                                                                    <div class="actions-secondary" data-role="add-to-links">
+                                                                                    <a href="#"
+                                               data-post='{"action":"http:\/\/localhost\/magento\/pub\/wishlist\/index\/add\/","data":{"product":12,"uenc":"aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~"}}' class="action towishlist" data-action="add-to-wishlist" title="Add&#x20;to&#x20;Wish&#x20;List">
+                                                <span>Add to Wish List</span>
+                                            </a>
+                                                                                                                                                                        <a href="#" class="action tocompare" data-post='{"action":"http:\/\/localhost\/magento\/pub\/catalog\/product_compare\/add\/","data":{"product":"12","uenc":"aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~"}}' title="Add&#x20;to&#x20;Compare">
+                                                <span>Add to Compare</span>
+                                            </a>
+                                                                            </div>
+                                                            </div>
+                        </div>
+                                    </div>
+            </div>
+                                </li><li class="product-item">            <div class="product-item-info">
+                <a href="http://localhost/magento/pub/gelang-ceri-putih-doff.html" class="product-item-photo">
+                    <span class="product-image-container product-image-container-3">
+    <span class="product-image-wrapper">
+        <img class="product-image-photo"
+                        src="http://localhost/magento/pub/media/catalog/product\cache\faa232bf47455e349391ea9b5119deb4\//g/e/gelang_cherry.jpeg"
+            loading="lazy"
+            width="240"
+            height="300"
+            alt="Gelang&#x20;Ceri&#x20;Putih&#x20;Doff"/></span>
+</span>
+<style>.product-image-container-3 {
+    width: 240px;
+    height: auto;
+    aspect-ratio: 240 / 300;
+}
+.product-image-container-3 span.product-image-wrapper {
+    height: 100%;
+    width: 100%;
+}
+@supports not (aspect-ratio: auto) { 
+    .product-image-container-3 span.product-image-wrapper {
+        padding-bottom: 125%;
+    }
+}</style>                </a>
+                <div class="product-item-details">
+                    <strong class="product-item-name">
+                        <a title="Gelang Ceri Putih Doff"
+                           href="http://localhost/magento/pub/gelang-ceri-putih-doff.html"
+                           class="product-item-link">
+                            Gelang Ceri Putih Doff                        </a>
+                    </strong>
+                                                                
+                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="3" data-price-box="product-id-3">
+    
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+        >
+        <span  id="old-price-3-widget-product-carousel"                data-price-amount="6000"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">IDR 6,000.00</span></span>
+        </span>
+
+</div>
+                    
+                                            <div class="product-item-inner">
+                            <div class="product-item-actions">
+                                                                    <div class="actions-primary">
+                                                                                                                                <form data-role="tocart-form" data-product-sku="100100100003" action="http://localhost/magento/pub/checkout/cart/add/uenc/aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~/product/3/" method="post">
+                                                <input type="hidden" name="product" value="3">
+                                                <input type="hidden" name="uenc" value="aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi9jaGVja291dC9jYXJ0L2FkZC91ZW5jL2FIUjBjRG92TDJ4dlkyRnNhRzl6ZEM5dFlXZGxiblJ2TDNCMVlpOH4vcHJvZHVjdC8zLw~~">
+                                                <input name="form_key" type="hidden" value="3xAhznNntf9UEUzh" />                                                <button type="submit"
+                                                        title="Add to Cart"
+                                                        class="action tocart primary">
+                                                    <span>Add to Cart</span>
+                                                </button>
+                                            </form>
+                                            <script type="text/x-magento-init">
+                                            {
+                                                "[data-role=tocart-form], .form.map.checkout": {
+                                                    "catalogAddToCart": {
+                                                        "product_sku": "100100100003"
+                                                    }
+                                                }
+                                            }
+                                            </script>
+                                                                            </div>
+                                                                                                    <div class="actions-secondary" data-role="add-to-links">
+                                                                                    <a href="#"
+                                               data-post='{"action":"http:\/\/localhost\/magento\/pub\/wishlist\/index\/add\/","data":{"product":3,"uenc":"aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~"}}' class="action towishlist" data-action="add-to-wishlist" title="Add&#x20;to&#x20;Wish&#x20;List">
+                                                <span>Add to Wish List</span>
+                                            </a>
+                                                                                                                                                                        <a href="#" class="action tocompare" data-post='{"action":"http:\/\/localhost\/magento\/pub\/catalog\/product_compare\/add\/","data":{"product":"3","uenc":"aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~"}}' title="Add&#x20;to&#x20;Compare">
+                                                <span>Add to Compare</span>
+                                            </a>
+                                                                            </div>
+                                                            </div>
+                        </div>
+                                    </div>
+            </div>
+                                </li><li class="product-item">            <div class="product-item-info">
+                <a href="http://localhost/magento/pub/gantungan-kunci-ungu-doff.html" class="product-item-photo">
+                    <span class="product-image-container product-image-container-32">
+    <span class="product-image-wrapper">
+        <img class="product-image-photo"
+                        src="http://localhost/magento/pub/media/catalog/product\cache\faa232bf47455e349391ea9b5119deb4\//g/a/gantungan_kunci_ungu_doff.jpeg"
+            loading="lazy"
+            width="240"
+            height="300"
+            alt="Gantungan&#x20;Kunci&#x20;Ungu&#x20;Doff"/></span>
+</span>
+<style>.product-image-container-32 {
+    width: 240px;
+    height: auto;
+    aspect-ratio: 240 / 300;
+}
+.product-image-container-32 span.product-image-wrapper {
+    height: 100%;
+    width: 100%;
+}
+@supports not (aspect-ratio: auto) { 
+    .product-image-container-32 span.product-image-wrapper {
+        padding-bottom: 125%;
+    }
+}</style>                </a>
+                <div class="product-item-details">
+                    <strong class="product-item-name">
+                        <a title="Gantungan Kunci Ungu Doff"
+                           href="http://localhost/magento/pub/gantungan-kunci-ungu-doff.html"
+                           class="product-item-link">
+                            Gantungan Kunci Ungu Doff                        </a>
+                    </strong>
+                                                                
+                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="32" data-price-box="product-id-32">
+    
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+        >
+        <span  id="old-price-32-widget-product-carousel"                data-price-amount="7000"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">IDR 7,000.00</span></span>
+        </span>
+
+</div>
+                    
+                                            <div class="product-item-inner">
+                            <div class="product-item-actions">
+                                                                    <div class="actions-primary">
+                                                                                                                                <form data-role="tocart-form" data-product-sku="600100100032" action="http://localhost/magento/pub/checkout/cart/add/uenc/aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~/product/32/" method="post">
+                                                <input type="hidden" name="product" value="32">
+                                                <input type="hidden" name="uenc" value="aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi9jaGVja291dC9jYXJ0L2FkZC91ZW5jL2FIUjBjRG92TDJ4dlkyRnNhRzl6ZEM5dFlXZGxiblJ2TDNCMVlpOH4vcHJvZHVjdC8zMi8~">
+                                                <input name="form_key" type="hidden" value="3xAhznNntf9UEUzh" />                                                <button type="submit"
+                                                        title="Add to Cart"
+                                                        class="action tocart primary">
+                                                    <span>Add to Cart</span>
+                                                </button>
+                                            </form>
+                                            <script type="text/x-magento-init">
+                                            {
+                                                "[data-role=tocart-form], .form.map.checkout": {
+                                                    "catalogAddToCart": {
+                                                        "product_sku": "600100100032"
+                                                    }
+                                                }
+                                            }
+                                            </script>
+                                                                            </div>
+                                                                                                    <div class="actions-secondary" data-role="add-to-links">
+                                                                                    <a href="#"
+                                               data-post='{"action":"http:\/\/localhost\/magento\/pub\/wishlist\/index\/add\/","data":{"product":32,"uenc":"aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~"}}' class="action towishlist" data-action="add-to-wishlist" title="Add&#x20;to&#x20;Wish&#x20;List">
+                                                <span>Add to Wish List</span>
+                                            </a>
+                                                                                                                                                                        <a href="#" class="action tocompare" data-post='{"action":"http:\/\/localhost\/magento\/pub\/catalog\/product_compare\/add\/","data":{"product":"32","uenc":"aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~"}}' title="Add&#x20;to&#x20;Compare">
+                                                <span>Add to Compare</span>
+                                            </a>
+                                                                            </div>
+                                                            </div>
+                        </div>
+                                    </div>
+            </div>
+                                </li><li class="product-item">            <div class="product-item-info">
+                <a href="http://localhost/magento/pub/gantungan-kunci-pink-putih-ceylon.html" class="product-item-photo">
+                    <span class="product-image-container product-image-container-34">
+    <span class="product-image-wrapper">
+        <img class="product-image-photo"
+                        src="http://localhost/magento/pub/media/catalog/product\cache\faa232bf47455e349391ea9b5119deb4\//g/a/gantungan_kunci_pink_putih_ceylon.jpg"
+            loading="lazy"
+            width="240"
+            height="300"
+            alt="Gantungan&#x20;Kunci&#x20;Pink&#x20;Putih&#x20;Ceylon"/></span>
+</span>
+<style>.product-image-container-34 {
+    width: 240px;
+    height: auto;
+    aspect-ratio: 240 / 300;
+}
+.product-image-container-34 span.product-image-wrapper {
+    height: 100%;
+    width: 100%;
+}
+@supports not (aspect-ratio: auto) { 
+    .product-image-container-34 span.product-image-wrapper {
+        padding-bottom: 125%;
+    }
+}</style>                </a>
+                <div class="product-item-details">
+                    <strong class="product-item-name">
+                        <a title="Gantungan Kunci Pink Putih Ceylon"
+                           href="http://localhost/magento/pub/gantungan-kunci-pink-putih-ceylon.html"
+                           class="product-item-link">
+                            Gantungan Kunci Pink Putih Ceylon                        </a>
+                    </strong>
+                                                                
+                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="34" data-price-box="product-id-34">
+    
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+        >
+        <span  id="old-price-34-widget-product-carousel"                data-price-amount="8000"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">IDR 8,000.00</span></span>
+        </span>
+
+</div>
+                    
+                                            <div class="product-item-inner">
+                            <div class="product-item-actions">
+                                                                    <div class="actions-primary">
+                                                                                                                                <form data-role="tocart-form" data-product-sku="600100100034" action="http://localhost/magento/pub/checkout/cart/add/uenc/aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~/product/34/" method="post">
+                                                <input type="hidden" name="product" value="34">
+                                                <input type="hidden" name="uenc" value="aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi9jaGVja291dC9jYXJ0L2FkZC91ZW5jL2FIUjBjRG92TDJ4dlkyRnNhRzl6ZEM5dFlXZGxiblJ2TDNCMVlpOH4vcHJvZHVjdC8zNC8~">
+                                                <input name="form_key" type="hidden" value="3xAhznNntf9UEUzh" />                                                <button type="submit"
+                                                        title="Add to Cart"
+                                                        class="action tocart primary">
+                                                    <span>Add to Cart</span>
+                                                </button>
+                                            </form>
+                                            <script type="text/x-magento-init">
+                                            {
+                                                "[data-role=tocart-form], .form.map.checkout": {
+                                                    "catalogAddToCart": {
+                                                        "product_sku": "600100100034"
+                                                    }
+                                                }
+                                            }
+                                            </script>
+                                                                            </div>
+                                                                                                    <div class="actions-secondary" data-role="add-to-links">
+                                                                                    <a href="#"
+                                               data-post='{"action":"http:\/\/localhost\/magento\/pub\/wishlist\/index\/add\/","data":{"product":34,"uenc":"aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~"}}' class="action towishlist" data-action="add-to-wishlist" title="Add&#x20;to&#x20;Wish&#x20;List">
+                                                <span>Add to Wish List</span>
+                                            </a>
+                                                                                                                                                                        <a href="#" class="action tocompare" data-post='{"action":"http:\/\/localhost\/magento\/pub\/catalog\/product_compare\/add\/","data":{"product":"34","uenc":"aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~"}}' title="Add&#x20;to&#x20;Compare">
+                                                <span>Add to Compare</span>
+                                            </a>
+                                                                            </div>
+                                                            </div>
+                        </div>
+                                    </div>
+            </div>
+                                </li><li class="product-item">            <div class="product-item-info">
+                <a href="http://localhost/magento/pub/gelang-karakter-trixie-tang.html" class="product-item-photo">
+                    <span class="product-image-container product-image-container-7">
+    <span class="product-image-wrapper">
+        <img class="product-image-photo"
+                        src="http://localhost/magento/pub/media/catalog/product\cache\faa232bf47455e349391ea9b5119deb4\//t/r/trixie_tang_bracelet.jpeg"
+            loading="lazy"
+            width="240"
+            height="300"
+            alt="Gelang&#x20;Karakter&#x20;Trixie&#x20;Tang"/></span>
+</span>
+<style>.product-image-container-7 {
+    width: 240px;
+    height: auto;
+    aspect-ratio: 240 / 300;
+}
+.product-image-container-7 span.product-image-wrapper {
+    height: 100%;
+    width: 100%;
+}
+@supports not (aspect-ratio: auto) { 
+    .product-image-container-7 span.product-image-wrapper {
+        padding-bottom: 125%;
+    }
+}</style>                </a>
+                <div class="product-item-details">
+                    <strong class="product-item-name">
+                        <a title="Gelang Karakter Trixie Tang"
+                           href="http://localhost/magento/pub/gelang-karakter-trixie-tang.html"
+                           class="product-item-link">
+                            Gelang Karakter Trixie Tang                        </a>
+                    </strong>
+                                                                
+                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="7" data-price-box="product-id-7">
+    
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+        >
+        <span  id="old-price-7-widget-product-carousel"                data-price-amount="10000"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">IDR 10,000.00</span></span>
+        </span>
+
+</div>
+                    
+                                            <div class="product-item-inner">
+                            <div class="product-item-actions">
+                                                                    <div class="actions-primary">
+                                                                                                                                <form data-role="tocart-form" data-product-sku="100100100008" action="http://localhost/magento/pub/checkout/cart/add/uenc/aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~/product/7/" method="post">
+                                                <input type="hidden" name="product" value="7">
+                                                <input type="hidden" name="uenc" value="aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi9jaGVja291dC9jYXJ0L2FkZC91ZW5jL2FIUjBjRG92TDJ4dlkyRnNhRzl6ZEM5dFlXZGxiblJ2TDNCMVlpOH4vcHJvZHVjdC83Lw~~">
+                                                <input name="form_key" type="hidden" value="3xAhznNntf9UEUzh" />                                                <button type="submit"
+                                                        title="Add to Cart"
+                                                        class="action tocart primary">
+                                                    <span>Add to Cart</span>
+                                                </button>
+                                            </form>
+                                            <script type="text/x-magento-init">
+                                            {
+                                                "[data-role=tocart-form], .form.map.checkout": {
+                                                    "catalogAddToCart": {
+                                                        "product_sku": "100100100008"
+                                                    }
+                                                }
+                                            }
+                                            </script>
+                                                                            </div>
+                                                                                                    <div class="actions-secondary" data-role="add-to-links">
+                                                                                    <a href="#"
+                                               data-post='{"action":"http:\/\/localhost\/magento\/pub\/wishlist\/index\/add\/","data":{"product":7,"uenc":"aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~"}}' class="action towishlist" data-action="add-to-wishlist" title="Add&#x20;to&#x20;Wish&#x20;List">
+                                                <span>Add to Wish List</span>
+                                            </a>
+                                                                                                                                                                        <a href="#" class="action tocompare" data-post='{"action":"http:\/\/localhost\/magento\/pub\/catalog\/product_compare\/add\/","data":{"product":"7","uenc":"aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~"}}' title="Add&#x20;to&#x20;Compare">
+                                                <span>Add to Compare</span>
+                                            </a>
+                                                                            </div>
+                                                            </div>
+                        </div>
+                                    </div>
+            </div>
+                                </li><li class="product-item">            <div class="product-item-info">
+                <a href="http://localhost/magento/pub/gantungan-kunci-pita-hitam-putih.html" class="product-item-photo">
+                    <span class="product-image-container product-image-container-33">
+    <span class="product-image-wrapper">
+        <img class="product-image-photo"
+                        src="http://localhost/magento/pub/media/catalog/product\cache\faa232bf47455e349391ea9b5119deb4\//g/a/gantungan_kunci_pita_hitam_putih.jpeg"
+            loading="lazy"
+            width="240"
+            height="300"
+            alt="Gantungan&#x20;Kunci&#x20;Pita&#x20;Hitam&#x20;Putih"/></span>
+</span>
+<style>.product-image-container-33 {
+    width: 240px;
+    height: auto;
+    aspect-ratio: 240 / 300;
+}
+.product-image-container-33 span.product-image-wrapper {
+    height: 100%;
+    width: 100%;
+}
+@supports not (aspect-ratio: auto) { 
+    .product-image-container-33 span.product-image-wrapper {
+        padding-bottom: 125%;
+    }
+}</style>                </a>
+                <div class="product-item-details">
+                    <strong class="product-item-name">
+                        <a title="Gantungan Kunci Pita Hitam Putih"
+                           href="http://localhost/magento/pub/gantungan-kunci-pita-hitam-putih.html"
+                           class="product-item-link">
+                            Gantungan Kunci Pita Hitam Putih                        </a>
+                    </strong>
+                                                                
+                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="33" data-price-box="product-id-33">
+    
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+        >
+        <span  id="old-price-33-widget-product-carousel"                data-price-amount="10000"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">IDR 10,000.00</span></span>
+        </span>
+
+</div>
+                    
+                                            <div class="product-item-inner">
+                            <div class="product-item-actions">
+                                                                    <div class="actions-primary">
+                                                                                                                                <form data-role="tocart-form" data-product-sku="600100100033" action="http://localhost/magento/pub/checkout/cart/add/uenc/aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~/product/33/" method="post">
+                                                <input type="hidden" name="product" value="33">
+                                                <input type="hidden" name="uenc" value="aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi9jaGVja291dC9jYXJ0L2FkZC91ZW5jL2FIUjBjRG92TDJ4dlkyRnNhRzl6ZEM5dFlXZGxiblJ2TDNCMVlpOH4vcHJvZHVjdC8zMy8~">
+                                                <input name="form_key" type="hidden" value="3xAhznNntf9UEUzh" />                                                <button type="submit"
+                                                        title="Add to Cart"
+                                                        class="action tocart primary">
+                                                    <span>Add to Cart</span>
+                                                </button>
+                                            </form>
+                                            <script type="text/x-magento-init">
+                                            {
+                                                "[data-role=tocart-form], .form.map.checkout": {
+                                                    "catalogAddToCart": {
+                                                        "product_sku": "600100100033"
+                                                    }
+                                                }
+                                            }
+                                            </script>
+                                                                            </div>
+                                                                                                    <div class="actions-secondary" data-role="add-to-links">
+                                                                                    <a href="#"
+                                               data-post='{"action":"http:\/\/localhost\/magento\/pub\/wishlist\/index\/add\/","data":{"product":33,"uenc":"aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~"}}' class="action towishlist" data-action="add-to-wishlist" title="Add&#x20;to&#x20;Wish&#x20;List">
+                                                <span>Add to Wish List</span>
+                                            </a>
+                                                                                                                                                                        <a href="#" class="action tocompare" data-post='{"action":"http:\/\/localhost\/magento\/pub\/catalog\/product_compare\/add\/","data":{"product":"33","uenc":"aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~"}}' title="Add&#x20;to&#x20;Compare">
+                                                <span>Add to Compare</span>
+                                            </a>
+                                                                            </div>
+                                                            </div>
+                        </div>
+                                    </div>
+            </div>
+                                </li><li class="product-item">            <div class="product-item-info">
+                <a href="http://localhost/magento/pub/gantungan-kunci-nama-dan-bandul.html" class="product-item-photo">
+                    <span class="product-image-container product-image-container-35">
+    <span class="product-image-wrapper">
+        <img class="product-image-photo"
+                        src="http://localhost/magento/pub/media/catalog/product\cache\faa232bf47455e349391ea9b5119deb4\//g/a/gantungan_kunci_nama_dan_bandul_.jpg"
+            loading="lazy"
+            width="240"
+            height="300"
+            alt="Gantungan&#x20;Kunci&#x20;Nama&#x20;dan&#x20;Bandul"/></span>
+</span>
+<style>.product-image-container-35 {
+    width: 240px;
+    height: auto;
+    aspect-ratio: 240 / 300;
+}
+.product-image-container-35 span.product-image-wrapper {
+    height: 100%;
+    width: 100%;
+}
+@supports not (aspect-ratio: auto) { 
+    .product-image-container-35 span.product-image-wrapper {
+        padding-bottom: 125%;
+    }
+}</style>                </a>
+                <div class="product-item-details">
+                    <strong class="product-item-name">
+                        <a title="Gantungan Kunci Nama dan Bandul"
+                           href="http://localhost/magento/pub/gantungan-kunci-nama-dan-bandul.html"
+                           class="product-item-link">
+                            Gantungan Kunci Nama dan Bandul                        </a>
+                    </strong>
+                                                                
+                    <div class="price-box price-final_price" data-role="priceBox" data-product-id="35" data-price-box="product-id-35">
+    
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+        >
+        <span  id="old-price-35-widget-product-carousel"                data-price-amount="10000"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">IDR 10,000.00</span></span>
+        </span>
+
+</div>
+                    
+                                            <div class="product-item-inner">
+                            <div class="product-item-actions">
+                                                                    <div class="actions-primary">
+                                                                                                                                <form data-role="tocart-form" data-product-sku="600100100035" action="http://localhost/magento/pub/checkout/cart/add/uenc/aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~/product/35/" method="post">
+                                                <input type="hidden" name="product" value="35">
+                                                <input type="hidden" name="uenc" value="aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi9jaGVja291dC9jYXJ0L2FkZC91ZW5jL2FIUjBjRG92TDJ4dlkyRnNhRzl6ZEM5dFlXZGxiblJ2TDNCMVlpOH4vcHJvZHVjdC8zNS8~">
+                                                <input name="form_key" type="hidden" value="3xAhznNntf9UEUzh" />                                                <button type="submit"
+                                                        title="Add to Cart"
+                                                        class="action tocart primary">
+                                                    <span>Add to Cart</span>
+                                                </button>
+                                            </form>
+                                            <script type="text/x-magento-init">
+                                            {
+                                                "[data-role=tocart-form], .form.map.checkout": {
+                                                    "catalogAddToCart": {
+                                                        "product_sku": "600100100035"
+                                                    }
+                                                }
+                                            }
+                                            </script>
+                                                                            </div>
+                                                                                                    <div class="actions-secondary" data-role="add-to-links">
+                                                                                    <a href="#"
+                                               data-post='{"action":"http:\/\/localhost\/magento\/pub\/wishlist\/index\/add\/","data":{"product":35,"uenc":"aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~"}}' class="action towishlist" data-action="add-to-wishlist" title="Add&#x20;to&#x20;Wish&#x20;List">
+                                                <span>Add to Wish List</span>
+                                            </a>
+                                                                                                                                                                        <a href="#" class="action tocompare" data-post='{"action":"http:\/\/localhost\/magento\/pub\/catalog\/product_compare\/add\/","data":{"product":"35","uenc":"aHR0cDovL2xvY2FsaG9zdC9tYWdlbnRvL3B1Yi8~"}}' title="Add&#x20;to&#x20;Compare">
+                                                <span>Add to Compare</span>
+                                            </a>
+                                                                            </div>
+                                                            </div>
+                        </div>
+                                    </div>
+            </div>
+            </li>            </ol>

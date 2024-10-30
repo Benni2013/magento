@@ -8,7 +8,7 @@ return [
     ],
     'cache' => [
         'graphql' => [
-            'id_salt' => '4HxwXe5yoaYzjgmZI7pkBo5yopczFDtQ'
+            'id_salt' => 'kwyhU8gkhBbhZozSDfMqR3J5bjsHE5pz'
         ],
         'frontend' => [
             'default' => [
@@ -27,14 +27,14 @@ return [
         'consumers_wait_for_messages' => 1
     ],
     'crypt' => [
-        'key' => 'base64l0RB0wF6fgrVD8GdI+gmrlql9TRb27LoYMlC3YAGZ2A='
+        'key' => 'base64G9j6MPsY7DhCvYRQkW7eA8bwavv2R0Wh9EIOB5aVsDg='
     ],
     'db' => [
         'table_prefix' => '',
         'connection' => [
             'default' => [
                 'host' => 'localhost',
-                'dbname' => 'magento',
+                'dbname' => 'm2',
                 'username' => 'root',
                 'password' => '',
                 'model' => 'mysql4',
@@ -84,6 +84,6 @@ return [
         'localhost'
     ],
     'install' => [
-        'date' => 'Mon, 21 Oct 2024 04:52:44 +0000'
+        'date' => 'Tue, 29 Oct 2024 23:22:49 +0000'
     ]
 ];
