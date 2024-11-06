@@ -608,9 +608,12 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_category_entity_after_insert AFTER INSERT ON catalog_category_entity FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `catalog_category_product_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_category_entity_after_insert AFTER INSERT ON catalog_category_entity FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `catalog_category_product_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -626,9 +629,12 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_category_entity_after_update AFTER UPDATE ON catalog_category_entity FOR EACH ROW
-BEGIN
-IF (NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`attribute_set_id` <=> OLD.`attribute_set_id`) OR NOT(NEW.`parent_id` <=> OLD.`parent_id`) OR NOT(NEW.`created_at` <=> OLD.`created_at`) OR NOT(NEW.`path` <=> OLD.`path`) OR NOT(NEW.`position` <=> OLD.`position`) OR NOT(NEW.`level` <=> OLD.`level`) OR NOT(NEW.`children_count` <=> OLD.`children_count`)) THEN INSERT IGNORE INTO `catalog_category_product_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_category_entity_after_update AFTER UPDATE ON catalog_category_entity FOR EACH ROW
+
+BEGIN
+
+IF (NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`attribute_set_id` <=> OLD.`attribute_set_id`) OR NOT(NEW.`parent_id` <=> OLD.`parent_id`) OR NOT(NEW.`created_at` <=> OLD.`created_at`) OR NOT(NEW.`path` <=> OLD.`path`) OR NOT(NEW.`position` <=> OLD.`position`) OR NOT(NEW.`level` <=> OLD.`level`) OR NOT(NEW.`children_count` <=> OLD.`children_count`)) THEN INSERT IGNORE INTO `catalog_category_product_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -644,9 +650,12 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_category_entity_after_delete AFTER DELETE ON catalog_category_entity FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `catalog_category_product_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_category_entity_after_delete AFTER DELETE ON catalog_category_entity FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `catalog_category_product_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -763,9 +772,12 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_category_entity_int_after_insert AFTER INSERT ON catalog_category_entity_int FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `catalog_category_product_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_category_entity_int_after_insert AFTER INSERT ON catalog_category_entity_int FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `catalog_category_product_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -781,9 +793,12 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_category_entity_int_after_update AFTER UPDATE ON catalog_category_entity_int FOR EACH ROW
-BEGIN
-IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalog_category_product_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_category_entity_int_after_update AFTER UPDATE ON catalog_category_entity_int FOR EACH ROW
+
+BEGIN
+
+IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalog_category_product_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -799,9 +814,12 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_category_entity_int_after_delete AFTER DELETE ON catalog_category_entity_int FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `catalog_category_product_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_category_entity_int_after_delete AFTER DELETE ON catalog_category_entity_int FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `catalog_category_product_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -915,11 +933,16 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_category_product_after_insert AFTER INSERT ON catalog_category_product FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`product_id`);
-INSERT IGNORE INTO `catalog_product_category_cl` (`entity_id`) VALUES (NEW.`product_id`);
-INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`product_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_category_product_after_insert AFTER INSERT ON catalog_category_product FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`product_id`);
+
+INSERT IGNORE INTO `catalog_product_category_cl` (`entity_id`) VALUES (NEW.`product_id`);
+
+INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`product_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -935,11 +958,16 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_category_product_after_update AFTER UPDATE ON catalog_category_product FOR EACH ROW
-BEGIN
-IF (NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`category_id` <=> OLD.`category_id`) OR NOT(NEW.`product_id` <=> OLD.`product_id`) OR NOT(NEW.`position` <=> OLD.`position`)) THEN INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`product_id`); END IF;
-IF (NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`category_id` <=> OLD.`category_id`) OR NOT(NEW.`product_id` <=> OLD.`product_id`) OR NOT(NEW.`position` <=> OLD.`position`)) THEN INSERT IGNORE INTO `catalog_product_category_cl` (`entity_id`) VALUES (NEW.`product_id`); END IF;
-IF (NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`category_id` <=> OLD.`category_id`) OR NOT(NEW.`product_id` <=> OLD.`product_id`) OR NOT(NEW.`position` <=> OLD.`position`)) THEN INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`product_id`); END IF;
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_category_product_after_update AFTER UPDATE ON catalog_category_product FOR EACH ROW
+
+BEGIN
+
+IF (NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`category_id` <=> OLD.`category_id`) OR NOT(NEW.`product_id` <=> OLD.`product_id`) OR NOT(NEW.`position` <=> OLD.`position`)) THEN INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`product_id`); END IF;
+
+IF (NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`category_id` <=> OLD.`category_id`) OR NOT(NEW.`product_id` <=> OLD.`product_id`) OR NOT(NEW.`position` <=> OLD.`position`)) THEN INSERT IGNORE INTO `catalog_product_category_cl` (`entity_id`) VALUES (NEW.`product_id`); END IF;
+
+IF (NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`category_id` <=> OLD.`category_id`) OR NOT(NEW.`product_id` <=> OLD.`product_id`) OR NOT(NEW.`position` <=> OLD.`position`)) THEN INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`product_id`); END IF;
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -955,11 +983,16 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_category_product_after_delete AFTER DELETE ON catalog_category_product FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (OLD.`product_id`);
-INSERT IGNORE INTO `catalog_product_category_cl` (`entity_id`) VALUES (OLD.`product_id`);
-INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (OLD.`product_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_category_product_after_delete AFTER DELETE ON catalog_category_product FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (OLD.`product_id`);
+
+INSERT IGNORE INTO `catalog_product_category_cl` (`entity_id`) VALUES (OLD.`product_id`);
+
+INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (OLD.`product_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -1404,9 +1437,12 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_product_bundle_selection_after_insert AFTER INSERT ON catalog_product_bundle_selection FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`parent_product_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_product_bundle_selection_after_insert AFTER INSERT ON catalog_product_bundle_selection FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`parent_product_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -1422,9 +1458,12 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_product_bundle_selection_after_update AFTER UPDATE ON catalog_product_bundle_selection FOR EACH ROW
-BEGIN
-IF (NOT(NEW.`selection_id` <=> OLD.`selection_id`) OR NOT(NEW.`option_id` <=> OLD.`option_id`) OR NOT(NEW.`parent_product_id` <=> OLD.`parent_product_id`) OR NOT(NEW.`product_id` <=> OLD.`product_id`) OR NOT(NEW.`position` <=> OLD.`position`) OR NOT(NEW.`is_default` <=> OLD.`is_default`) OR NOT(NEW.`selection_price_type` <=> OLD.`selection_price_type`) OR NOT(NEW.`selection_price_value` <=> OLD.`selection_price_value`) OR NOT(NEW.`selection_qty` <=> OLD.`selection_qty`) OR NOT(NEW.`selection_can_change_qty` <=> OLD.`selection_can_change_qty`)) THEN INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`parent_product_id`); END IF;
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_product_bundle_selection_after_update AFTER UPDATE ON catalog_product_bundle_selection FOR EACH ROW
+
+BEGIN
+
+IF (NOT(NEW.`selection_id` <=> OLD.`selection_id`) OR NOT(NEW.`option_id` <=> OLD.`option_id`) OR NOT(NEW.`parent_product_id` <=> OLD.`parent_product_id`) OR NOT(NEW.`product_id` <=> OLD.`product_id`) OR NOT(NEW.`position` <=> OLD.`position`) OR NOT(NEW.`is_default` <=> OLD.`is_default`) OR NOT(NEW.`selection_price_type` <=> OLD.`selection_price_type`) OR NOT(NEW.`selection_price_value` <=> OLD.`selection_price_value`) OR NOT(NEW.`selection_qty` <=> OLD.`selection_qty`) OR NOT(NEW.`selection_can_change_qty` <=> OLD.`selection_can_change_qty`)) THEN INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`parent_product_id`); END IF;
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -1440,9 +1479,12 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_product_bundle_selection_after_delete AFTER DELETE ON catalog_product_bundle_selection FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (OLD.`parent_product_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_product_bundle_selection_after_delete AFTER DELETE ON catalog_product_bundle_selection FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (OLD.`parent_product_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -1569,11 +1611,16 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_product_entity_after_insert AFTER INSERT ON catalog_product_entity FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`entity_id`);
-INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`entity_id`);
-INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_product_entity_after_insert AFTER INSERT ON catalog_product_entity FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+
+INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+
+INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -1589,11 +1636,16 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_product_entity_after_update AFTER UPDATE ON catalog_product_entity FOR EACH ROW
-BEGIN
-IF (NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`attribute_set_id` <=> OLD.`attribute_set_id`) OR NOT(NEW.`type_id` <=> OLD.`type_id`) OR NOT(NEW.`sku` <=> OLD.`sku`) OR NOT(NEW.`has_options` <=> OLD.`has_options`) OR NOT(NEW.`required_options` <=> OLD.`required_options`) OR NOT(NEW.`created_at` <=> OLD.`created_at`)) THEN INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
-IF (NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`attribute_set_id` <=> OLD.`attribute_set_id`) OR NOT(NEW.`type_id` <=> OLD.`type_id`) OR NOT(NEW.`sku` <=> OLD.`sku`) OR NOT(NEW.`has_options` <=> OLD.`has_options`) OR NOT(NEW.`required_options` <=> OLD.`required_options`) OR NOT(NEW.`created_at` <=> OLD.`created_at`)) THEN INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
-IF (NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`attribute_set_id` <=> OLD.`attribute_set_id`) OR NOT(NEW.`type_id` <=> OLD.`type_id`) OR NOT(NEW.`sku` <=> OLD.`sku`) OR NOT(NEW.`has_options` <=> OLD.`has_options`) OR NOT(NEW.`required_options` <=> OLD.`required_options`) OR NOT(NEW.`created_at` <=> OLD.`created_at`)) THEN INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_product_entity_after_update AFTER UPDATE ON catalog_product_entity FOR EACH ROW
+
+BEGIN
+
+IF (NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`attribute_set_id` <=> OLD.`attribute_set_id`) OR NOT(NEW.`type_id` <=> OLD.`type_id`) OR NOT(NEW.`sku` <=> OLD.`sku`) OR NOT(NEW.`has_options` <=> OLD.`has_options`) OR NOT(NEW.`required_options` <=> OLD.`required_options`) OR NOT(NEW.`created_at` <=> OLD.`created_at`)) THEN INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+
+IF (NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`attribute_set_id` <=> OLD.`attribute_set_id`) OR NOT(NEW.`type_id` <=> OLD.`type_id`) OR NOT(NEW.`sku` <=> OLD.`sku`) OR NOT(NEW.`has_options` <=> OLD.`has_options`) OR NOT(NEW.`required_options` <=> OLD.`required_options`) OR NOT(NEW.`created_at` <=> OLD.`created_at`)) THEN INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+
+IF (NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`attribute_set_id` <=> OLD.`attribute_set_id`) OR NOT(NEW.`type_id` <=> OLD.`type_id`) OR NOT(NEW.`sku` <=> OLD.`sku`) OR NOT(NEW.`has_options` <=> OLD.`has_options`) OR NOT(NEW.`required_options` <=> OLD.`required_options`) OR NOT(NEW.`created_at` <=> OLD.`created_at`)) THEN INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -1609,11 +1661,16 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_product_entity_after_delete AFTER DELETE ON catalog_product_entity FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (OLD.`entity_id`);
-INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (OLD.`entity_id`);
-INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_product_entity_after_delete AFTER DELETE ON catalog_product_entity FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+
+INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+
+INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -1661,11 +1718,16 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_product_entity_datetime_after_insert AFTER INSERT ON catalog_product_entity_datetime FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`entity_id`);
-INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`entity_id`);
-INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_product_entity_datetime_after_insert AFTER INSERT ON catalog_product_entity_datetime FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+
+INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+
+INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -1681,11 +1743,16 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_product_entity_datetime_after_update AFTER UPDATE ON catalog_product_entity_datetime FOR EACH ROW
-BEGIN
-IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
-IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
-IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_product_entity_datetime_after_update AFTER UPDATE ON catalog_product_entity_datetime FOR EACH ROW
+
+BEGIN
+
+IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+
+IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+
+IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -1701,11 +1768,16 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_product_entity_datetime_after_delete AFTER DELETE ON catalog_product_entity_datetime FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (OLD.`entity_id`);
-INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (OLD.`entity_id`);
-INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_product_entity_datetime_after_delete AFTER DELETE ON catalog_product_entity_datetime FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+
+INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+
+INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -1754,12 +1826,18 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_product_entity_decimal_after_insert AFTER INSERT ON catalog_product_entity_decimal FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`entity_id`);
-INSERT IGNORE INTO `catalog_product_attribute_cl` (`entity_id`) VALUES (NEW.`entity_id`);
-INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`entity_id`);
-INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_product_entity_decimal_after_insert AFTER INSERT ON catalog_product_entity_decimal FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+
+INSERT IGNORE INTO `catalog_product_attribute_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+
+INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+
+INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -1775,12 +1853,18 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_product_entity_decimal_after_update AFTER UPDATE ON catalog_product_entity_decimal FOR EACH ROW
-BEGIN
-IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
-IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalog_product_attribute_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
-IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
-IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_product_entity_decimal_after_update AFTER UPDATE ON catalog_product_entity_decimal FOR EACH ROW
+
+BEGIN
+
+IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+
+IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalog_product_attribute_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+
+IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+
+IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -1796,12 +1880,18 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_product_entity_decimal_after_delete AFTER DELETE ON catalog_product_entity_decimal FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (OLD.`entity_id`);
-INSERT IGNORE INTO `catalog_product_attribute_cl` (`entity_id`) VALUES (OLD.`entity_id`);
-INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (OLD.`entity_id`);
-INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_product_entity_decimal_after_delete AFTER DELETE ON catalog_product_entity_decimal FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+
+INSERT IGNORE INTO `catalog_product_attribute_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+
+INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+
+INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -1885,14 +1975,22 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_product_entity_int_after_insert AFTER INSERT ON catalog_product_entity_int FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`entity_id`);
-INSERT IGNORE INTO `catalog_product_category_cl` (`entity_id`) VALUES (NEW.`entity_id`);
-INSERT IGNORE INTO `catalog_product_attribute_cl` (`entity_id`) VALUES (NEW.`entity_id`);
-INSERT IGNORE INTO `cataloginventory_stock_cl` (`entity_id`) VALUES (NEW.`entity_id`);
-INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`entity_id`);
-INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_product_entity_int_after_insert AFTER INSERT ON catalog_product_entity_int FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+
+INSERT IGNORE INTO `catalog_product_category_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+
+INSERT IGNORE INTO `catalog_product_attribute_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+
+INSERT IGNORE INTO `cataloginventory_stock_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+
+INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+
+INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -1908,14 +2006,22 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_product_entity_int_after_update AFTER UPDATE ON catalog_product_entity_int FOR EACH ROW
-BEGIN
-IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
-IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalog_product_category_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
-IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalog_product_attribute_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
-IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `cataloginventory_stock_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
-IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
-IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_product_entity_int_after_update AFTER UPDATE ON catalog_product_entity_int FOR EACH ROW
+
+BEGIN
+
+IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+
+IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalog_product_category_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+
+IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalog_product_attribute_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+
+IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `cataloginventory_stock_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+
+IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+
+IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -1931,14 +2037,22 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_product_entity_int_after_delete AFTER DELETE ON catalog_product_entity_int FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (OLD.`entity_id`);
-INSERT IGNORE INTO `catalog_product_category_cl` (`entity_id`) VALUES (OLD.`entity_id`);
-INSERT IGNORE INTO `catalog_product_attribute_cl` (`entity_id`) VALUES (OLD.`entity_id`);
-INSERT IGNORE INTO `cataloginventory_stock_cl` (`entity_id`) VALUES (OLD.`entity_id`);
-INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (OLD.`entity_id`);
-INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_product_entity_int_after_delete AFTER DELETE ON catalog_product_entity_int FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+
+INSERT IGNORE INTO `catalog_product_category_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+
+INSERT IGNORE INTO `catalog_product_attribute_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+
+INSERT IGNORE INTO `cataloginventory_stock_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+
+INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+
+INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -2110,10 +2224,14 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_product_entity_text_after_insert AFTER INSERT ON catalog_product_entity_text FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`entity_id`);
-INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_product_entity_text_after_insert AFTER INSERT ON catalog_product_entity_text FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+
+INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -2129,10 +2247,14 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_product_entity_text_after_update AFTER UPDATE ON catalog_product_entity_text FOR EACH ROW
-BEGIN
-IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
-IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_product_entity_text_after_update AFTER UPDATE ON catalog_product_entity_text FOR EACH ROW
+
+BEGIN
+
+IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+
+IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -2148,10 +2270,14 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_product_entity_text_after_delete AFTER DELETE ON catalog_product_entity_text FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (OLD.`entity_id`);
-INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_product_entity_text_after_delete AFTER DELETE ON catalog_product_entity_text FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+
+INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -2202,10 +2328,14 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_product_entity_tier_price_after_insert AFTER INSERT ON catalog_product_entity_tier_price FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (NEW.`entity_id`);
-INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_product_entity_tier_price_after_insert AFTER INSERT ON catalog_product_entity_tier_price FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+
+INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -2221,10 +2351,14 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_product_entity_tier_price_after_update AFTER UPDATE ON catalog_product_entity_tier_price FOR EACH ROW
-BEGIN
-IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`all_groups` <=> OLD.`all_groups`) OR NOT(NEW.`customer_group_id` <=> OLD.`customer_group_id`) OR NOT(NEW.`qty` <=> OLD.`qty`) OR NOT(NEW.`value` <=> OLD.`value`) OR NOT(NEW.`website_id` <=> OLD.`website_id`) OR NOT(NEW.`percentage_value` <=> OLD.`percentage_value`)) THEN INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
-IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`all_groups` <=> OLD.`all_groups`) OR NOT(NEW.`customer_group_id` <=> OLD.`customer_group_id`) OR NOT(NEW.`qty` <=> OLD.`qty`) OR NOT(NEW.`value` <=> OLD.`value`) OR NOT(NEW.`website_id` <=> OLD.`website_id`) OR NOT(NEW.`percentage_value` <=> OLD.`percentage_value`)) THEN INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_product_entity_tier_price_after_update AFTER UPDATE ON catalog_product_entity_tier_price FOR EACH ROW
+
+BEGIN
+
+IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`all_groups` <=> OLD.`all_groups`) OR NOT(NEW.`customer_group_id` <=> OLD.`customer_group_id`) OR NOT(NEW.`qty` <=> OLD.`qty`) OR NOT(NEW.`value` <=> OLD.`value`) OR NOT(NEW.`website_id` <=> OLD.`website_id`) OR NOT(NEW.`percentage_value` <=> OLD.`percentage_value`)) THEN INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+
+IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`all_groups` <=> OLD.`all_groups`) OR NOT(NEW.`customer_group_id` <=> OLD.`customer_group_id`) OR NOT(NEW.`qty` <=> OLD.`qty`) OR NOT(NEW.`value` <=> OLD.`value`) OR NOT(NEW.`website_id` <=> OLD.`website_id`) OR NOT(NEW.`percentage_value` <=> OLD.`percentage_value`)) THEN INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -2240,10 +2374,14 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_product_entity_tier_price_after_delete AFTER DELETE ON catalog_product_entity_tier_price FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (OLD.`entity_id`);
-INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_product_entity_tier_price_after_delete AFTER DELETE ON catalog_product_entity_tier_price FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+
+INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -2292,11 +2430,16 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_product_entity_varchar_after_insert AFTER INSERT ON catalog_product_entity_varchar FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`entity_id`);
-INSERT IGNORE INTO `catalog_product_attribute_cl` (`entity_id`) VALUES (NEW.`entity_id`);
-INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_product_entity_varchar_after_insert AFTER INSERT ON catalog_product_entity_varchar FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+
+INSERT IGNORE INTO `catalog_product_attribute_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+
+INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -2312,11 +2455,16 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_product_entity_varchar_after_update AFTER UPDATE ON catalog_product_entity_varchar FOR EACH ROW
-BEGIN
-IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
-IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalog_product_attribute_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
-IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_product_entity_varchar_after_update AFTER UPDATE ON catalog_product_entity_varchar FOR EACH ROW
+
+BEGIN
+
+IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+
+IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalog_product_attribute_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+
+IF (NOT(NEW.`value_id` <=> OLD.`value_id`) OR NOT(NEW.`attribute_id` <=> OLD.`attribute_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`value` <=> OLD.`value`)) THEN INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -2332,11 +2480,16 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_product_entity_varchar_after_delete AFTER DELETE ON catalog_product_entity_varchar FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (OLD.`entity_id`);
-INSERT IGNORE INTO `catalog_product_attribute_cl` (`entity_id`) VALUES (OLD.`entity_id`);
-INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_product_entity_varchar_after_delete AFTER DELETE ON catalog_product_entity_varchar FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+
+INSERT IGNORE INTO `catalog_product_attribute_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+
+INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -3359,13 +3512,20 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_product_link_after_insert AFTER INSERT ON catalog_product_link FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`product_id`);
-INSERT IGNORE INTO `catalog_product_attribute_cl` (`entity_id`) VALUES (NEW.`product_id`);
-INSERT IGNORE INTO `cataloginventory_stock_cl` (`entity_id`) VALUES (NEW.`product_id`);
-INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`product_id`);
-INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (NEW.`product_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_product_link_after_insert AFTER INSERT ON catalog_product_link FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`product_id`);
+
+INSERT IGNORE INTO `catalog_product_attribute_cl` (`entity_id`) VALUES (NEW.`product_id`);
+
+INSERT IGNORE INTO `cataloginventory_stock_cl` (`entity_id`) VALUES (NEW.`product_id`);
+
+INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`product_id`);
+
+INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (NEW.`product_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -3381,13 +3541,20 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_product_link_after_update AFTER UPDATE ON catalog_product_link FOR EACH ROW
-BEGIN
-IF (NOT(NEW.`link_id` <=> OLD.`link_id`) OR NOT(NEW.`product_id` <=> OLD.`product_id`) OR NOT(NEW.`linked_product_id` <=> OLD.`linked_product_id`) OR NOT(NEW.`link_type_id` <=> OLD.`link_type_id`)) THEN INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`product_id`); END IF;
-IF (NOT(NEW.`link_id` <=> OLD.`link_id`) OR NOT(NEW.`product_id` <=> OLD.`product_id`) OR NOT(NEW.`linked_product_id` <=> OLD.`linked_product_id`) OR NOT(NEW.`link_type_id` <=> OLD.`link_type_id`)) THEN INSERT IGNORE INTO `catalog_product_attribute_cl` (`entity_id`) VALUES (NEW.`product_id`); END IF;
-IF (NOT(NEW.`link_id` <=> OLD.`link_id`) OR NOT(NEW.`product_id` <=> OLD.`product_id`) OR NOT(NEW.`linked_product_id` <=> OLD.`linked_product_id`) OR NOT(NEW.`link_type_id` <=> OLD.`link_type_id`)) THEN INSERT IGNORE INTO `cataloginventory_stock_cl` (`entity_id`) VALUES (NEW.`product_id`); END IF;
-IF (NOT(NEW.`link_id` <=> OLD.`link_id`) OR NOT(NEW.`product_id` <=> OLD.`product_id`) OR NOT(NEW.`linked_product_id` <=> OLD.`linked_product_id`) OR NOT(NEW.`link_type_id` <=> OLD.`link_type_id`)) THEN INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`product_id`); END IF;
-IF (NOT(NEW.`link_id` <=> OLD.`link_id`) OR NOT(NEW.`product_id` <=> OLD.`product_id`) OR NOT(NEW.`linked_product_id` <=> OLD.`linked_product_id`) OR NOT(NEW.`link_type_id` <=> OLD.`link_type_id`)) THEN INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (NEW.`product_id`); END IF;
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_product_link_after_update AFTER UPDATE ON catalog_product_link FOR EACH ROW
+
+BEGIN
+
+IF (NOT(NEW.`link_id` <=> OLD.`link_id`) OR NOT(NEW.`product_id` <=> OLD.`product_id`) OR NOT(NEW.`linked_product_id` <=> OLD.`linked_product_id`) OR NOT(NEW.`link_type_id` <=> OLD.`link_type_id`)) THEN INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`product_id`); END IF;
+
+IF (NOT(NEW.`link_id` <=> OLD.`link_id`) OR NOT(NEW.`product_id` <=> OLD.`product_id`) OR NOT(NEW.`linked_product_id` <=> OLD.`linked_product_id`) OR NOT(NEW.`link_type_id` <=> OLD.`link_type_id`)) THEN INSERT IGNORE INTO `catalog_product_attribute_cl` (`entity_id`) VALUES (NEW.`product_id`); END IF;
+
+IF (NOT(NEW.`link_id` <=> OLD.`link_id`) OR NOT(NEW.`product_id` <=> OLD.`product_id`) OR NOT(NEW.`linked_product_id` <=> OLD.`linked_product_id`) OR NOT(NEW.`link_type_id` <=> OLD.`link_type_id`)) THEN INSERT IGNORE INTO `cataloginventory_stock_cl` (`entity_id`) VALUES (NEW.`product_id`); END IF;
+
+IF (NOT(NEW.`link_id` <=> OLD.`link_id`) OR NOT(NEW.`product_id` <=> OLD.`product_id`) OR NOT(NEW.`linked_product_id` <=> OLD.`linked_product_id`) OR NOT(NEW.`link_type_id` <=> OLD.`link_type_id`)) THEN INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (NEW.`product_id`); END IF;
+
+IF (NOT(NEW.`link_id` <=> OLD.`link_id`) OR NOT(NEW.`product_id` <=> OLD.`product_id`) OR NOT(NEW.`linked_product_id` <=> OLD.`linked_product_id`) OR NOT(NEW.`link_type_id` <=> OLD.`link_type_id`)) THEN INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (NEW.`product_id`); END IF;
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -3403,13 +3570,20 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_product_link_after_delete AFTER DELETE ON catalog_product_link FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (OLD.`product_id`);
-INSERT IGNORE INTO `catalog_product_attribute_cl` (`entity_id`) VALUES (OLD.`product_id`);
-INSERT IGNORE INTO `cataloginventory_stock_cl` (`entity_id`) VALUES (OLD.`product_id`);
-INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (OLD.`product_id`);
-INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (OLD.`product_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_product_link_after_delete AFTER DELETE ON catalog_product_link FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (OLD.`product_id`);
+
+INSERT IGNORE INTO `catalog_product_attribute_cl` (`entity_id`) VALUES (OLD.`product_id`);
+
+INSERT IGNORE INTO `cataloginventory_stock_cl` (`entity_id`) VALUES (OLD.`product_id`);
+
+INSERT IGNORE INTO `catalogrule_product_cl` (`entity_id`) VALUES (OLD.`product_id`);
+
+INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (OLD.`product_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -3877,9 +4051,12 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_product_super_link_after_insert AFTER INSERT ON catalog_product_super_link FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`product_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_product_super_link_after_insert AFTER INSERT ON catalog_product_super_link FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`product_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -3895,9 +4072,12 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_product_super_link_after_update AFTER UPDATE ON catalog_product_super_link FOR EACH ROW
-BEGIN
-IF (NOT(NEW.`link_id` <=> OLD.`link_id`) OR NOT(NEW.`product_id` <=> OLD.`product_id`) OR NOT(NEW.`parent_id` <=> OLD.`parent_id`)) THEN INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`product_id`); END IF;
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_product_super_link_after_update AFTER UPDATE ON catalog_product_super_link FOR EACH ROW
+
+BEGIN
+
+IF (NOT(NEW.`link_id` <=> OLD.`link_id`) OR NOT(NEW.`product_id` <=> OLD.`product_id`) OR NOT(NEW.`parent_id` <=> OLD.`parent_id`)) THEN INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`product_id`); END IF;
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -3913,9 +4093,12 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_product_super_link_after_delete AFTER DELETE ON catalog_product_super_link FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (OLD.`product_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_product_super_link_after_delete AFTER DELETE ON catalog_product_super_link FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (OLD.`product_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -3958,11 +4141,16 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_product_website_after_insert AFTER INSERT ON catalog_product_website FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`product_id`);
-INSERT IGNORE INTO `catalog_product_category_cl` (`entity_id`) VALUES (NEW.`product_id`);
-INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (NEW.`product_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_product_website_after_insert AFTER INSERT ON catalog_product_website FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`product_id`);
+
+INSERT IGNORE INTO `catalog_product_category_cl` (`entity_id`) VALUES (NEW.`product_id`);
+
+INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (NEW.`product_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -3978,11 +4166,16 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_product_website_after_update AFTER UPDATE ON catalog_product_website FOR EACH ROW
-BEGIN
-IF (NOT(NEW.`product_id` <=> OLD.`product_id`) OR NOT(NEW.`website_id` <=> OLD.`website_id`)) THEN INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`product_id`); END IF;
-IF (NOT(NEW.`product_id` <=> OLD.`product_id`) OR NOT(NEW.`website_id` <=> OLD.`website_id`)) THEN INSERT IGNORE INTO `catalog_product_category_cl` (`entity_id`) VALUES (NEW.`product_id`); END IF;
-IF (NOT(NEW.`product_id` <=> OLD.`product_id`) OR NOT(NEW.`website_id` <=> OLD.`website_id`)) THEN INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (NEW.`product_id`); END IF;
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_product_website_after_update AFTER UPDATE ON catalog_product_website FOR EACH ROW
+
+BEGIN
+
+IF (NOT(NEW.`product_id` <=> OLD.`product_id`) OR NOT(NEW.`website_id` <=> OLD.`website_id`)) THEN INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (NEW.`product_id`); END IF;
+
+IF (NOT(NEW.`product_id` <=> OLD.`product_id`) OR NOT(NEW.`website_id` <=> OLD.`website_id`)) THEN INSERT IGNORE INTO `catalog_product_category_cl` (`entity_id`) VALUES (NEW.`product_id`); END IF;
+
+IF (NOT(NEW.`product_id` <=> OLD.`product_id`) OR NOT(NEW.`website_id` <=> OLD.`website_id`)) THEN INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (NEW.`product_id`); END IF;
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -3998,11 +4191,16 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalog_product_website_after_delete AFTER DELETE ON catalog_product_website FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (OLD.`product_id`);
-INSERT IGNORE INTO `catalog_product_category_cl` (`entity_id`) VALUES (OLD.`product_id`);
-INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (OLD.`product_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalog_product_website_after_delete AFTER DELETE ON catalog_product_website FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `catalogsearch_fulltext_cl` (`entity_id`) VALUES (OLD.`product_id`);
+
+INSERT IGNORE INTO `catalog_product_category_cl` (`entity_id`) VALUES (OLD.`product_id`);
+
+INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (OLD.`product_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -4152,9 +4350,12 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_cataloginventory_stock_item_after_insert AFTER INSERT ON cataloginventory_stock_item FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `cataloginventory_stock_cl` (`entity_id`) VALUES (NEW.`product_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_cataloginventory_stock_item_after_insert AFTER INSERT ON cataloginventory_stock_item FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `cataloginventory_stock_cl` (`entity_id`) VALUES (NEW.`product_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -4170,9 +4371,12 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_cataloginventory_stock_item_after_update AFTER UPDATE ON cataloginventory_stock_item FOR EACH ROW
-BEGIN
-IF (NOT(NEW.`item_id` <=> OLD.`item_id`) OR NOT(NEW.`product_id` <=> OLD.`product_id`) OR NOT(NEW.`stock_id` <=> OLD.`stock_id`) OR NOT(NEW.`qty` <=> OLD.`qty`) OR NOT(NEW.`min_qty` <=> OLD.`min_qty`) OR NOT(NEW.`use_config_min_qty` <=> OLD.`use_config_min_qty`) OR NOT(NEW.`is_qty_decimal` <=> OLD.`is_qty_decimal`) OR NOT(NEW.`backorders` <=> OLD.`backorders`) OR NOT(NEW.`use_config_backorders` <=> OLD.`use_config_backorders`) OR NOT(NEW.`min_sale_qty` <=> OLD.`min_sale_qty`) OR NOT(NEW.`use_config_min_sale_qty` <=> OLD.`use_config_min_sale_qty`) OR NOT(NEW.`max_sale_qty` <=> OLD.`max_sale_qty`) OR NOT(NEW.`use_config_max_sale_qty` <=> OLD.`use_config_max_sale_qty`) OR NOT(NEW.`is_in_stock` <=> OLD.`is_in_stock`) OR NOT(NEW.`low_stock_date` <=> OLD.`low_stock_date`) OR NOT(NEW.`notify_stock_qty` <=> OLD.`notify_stock_qty`) OR NOT(NEW.`use_config_notify_stock_qty` <=> OLD.`use_config_notify_stock_qty`) OR NOT(NEW.`manage_stock` <=> OLD.`manage_stock`) OR NOT(NEW.`use_config_manage_stock` <=> OLD.`use_config_manage_stock`) OR NOT(NEW.`stock_status_changed_auto` <=> OLD.`stock_status_changed_auto`) OR NOT(NEW.`use_config_qty_increments` <=> OLD.`use_config_qty_increments`) OR NOT(NEW.`qty_increments` <=> OLD.`qty_increments`) OR NOT(NEW.`use_config_enable_qty_inc` <=> OLD.`use_config_enable_qty_inc`) OR NOT(NEW.`enable_qty_increments` <=> OLD.`enable_qty_increments`) OR NOT(NEW.`is_decimal_divided` <=> OLD.`is_decimal_divided`) OR NOT(NEW.`website_id` <=> OLD.`website_id`)) THEN INSERT IGNORE INTO `cataloginventory_stock_cl` (`entity_id`) VALUES (NEW.`product_id`); END IF;
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_cataloginventory_stock_item_after_update AFTER UPDATE ON cataloginventory_stock_item FOR EACH ROW
+
+BEGIN
+
+IF (NOT(NEW.`item_id` <=> OLD.`item_id`) OR NOT(NEW.`product_id` <=> OLD.`product_id`) OR NOT(NEW.`stock_id` <=> OLD.`stock_id`) OR NOT(NEW.`qty` <=> OLD.`qty`) OR NOT(NEW.`min_qty` <=> OLD.`min_qty`) OR NOT(NEW.`use_config_min_qty` <=> OLD.`use_config_min_qty`) OR NOT(NEW.`is_qty_decimal` <=> OLD.`is_qty_decimal`) OR NOT(NEW.`backorders` <=> OLD.`backorders`) OR NOT(NEW.`use_config_backorders` <=> OLD.`use_config_backorders`) OR NOT(NEW.`min_sale_qty` <=> OLD.`min_sale_qty`) OR NOT(NEW.`use_config_min_sale_qty` <=> OLD.`use_config_min_sale_qty`) OR NOT(NEW.`max_sale_qty` <=> OLD.`max_sale_qty`) OR NOT(NEW.`use_config_max_sale_qty` <=> OLD.`use_config_max_sale_qty`) OR NOT(NEW.`is_in_stock` <=> OLD.`is_in_stock`) OR NOT(NEW.`low_stock_date` <=> OLD.`low_stock_date`) OR NOT(NEW.`notify_stock_qty` <=> OLD.`notify_stock_qty`) OR NOT(NEW.`use_config_notify_stock_qty` <=> OLD.`use_config_notify_stock_qty`) OR NOT(NEW.`manage_stock` <=> OLD.`manage_stock`) OR NOT(NEW.`use_config_manage_stock` <=> OLD.`use_config_manage_stock`) OR NOT(NEW.`stock_status_changed_auto` <=> OLD.`stock_status_changed_auto`) OR NOT(NEW.`use_config_qty_increments` <=> OLD.`use_config_qty_increments`) OR NOT(NEW.`qty_increments` <=> OLD.`qty_increments`) OR NOT(NEW.`use_config_enable_qty_inc` <=> OLD.`use_config_enable_qty_inc`) OR NOT(NEW.`enable_qty_increments` <=> OLD.`enable_qty_increments`) OR NOT(NEW.`is_decimal_divided` <=> OLD.`is_decimal_divided`) OR NOT(NEW.`website_id` <=> OLD.`website_id`)) THEN INSERT IGNORE INTO `cataloginventory_stock_cl` (`entity_id`) VALUES (NEW.`product_id`); END IF;
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -4188,9 +4392,12 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_cataloginventory_stock_item_after_delete AFTER DELETE ON cataloginventory_stock_item FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `cataloginventory_stock_cl` (`entity_id`) VALUES (OLD.`product_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_cataloginventory_stock_item_after_delete AFTER DELETE ON cataloginventory_stock_item FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `cataloginventory_stock_cl` (`entity_id`) VALUES (OLD.`product_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -4356,9 +4563,12 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalogrule_after_insert AFTER INSERT ON catalogrule FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `catalogrule_rule_cl` (`entity_id`) VALUES (NEW.`rule_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalogrule_after_insert AFTER INSERT ON catalogrule FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `catalogrule_rule_cl` (`entity_id`) VALUES (NEW.`rule_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -4374,9 +4584,12 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalogrule_after_update AFTER UPDATE ON catalogrule FOR EACH ROW
-BEGIN
-IF (NOT(NEW.`rule_id` <=> OLD.`rule_id`) OR NOT(NEW.`name` <=> OLD.`name`) OR NOT(NEW.`description` <=> OLD.`description`) OR NOT(NEW.`from_date` <=> OLD.`from_date`) OR NOT(NEW.`to_date` <=> OLD.`to_date`) OR NOT(NEW.`is_active` <=> OLD.`is_active`) OR NOT(NEW.`conditions_serialized` <=> OLD.`conditions_serialized`) OR NOT(NEW.`actions_serialized` <=> OLD.`actions_serialized`) OR NOT(NEW.`stop_rules_processing` <=> OLD.`stop_rules_processing`) OR NOT(NEW.`sort_order` <=> OLD.`sort_order`) OR NOT(NEW.`simple_action` <=> OLD.`simple_action`) OR NOT(NEW.`discount_amount` <=> OLD.`discount_amount`)) THEN INSERT IGNORE INTO `catalogrule_rule_cl` (`entity_id`) VALUES (NEW.`rule_id`); END IF;
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalogrule_after_update AFTER UPDATE ON catalogrule FOR EACH ROW
+
+BEGIN
+
+IF (NOT(NEW.`rule_id` <=> OLD.`rule_id`) OR NOT(NEW.`name` <=> OLD.`name`) OR NOT(NEW.`description` <=> OLD.`description`) OR NOT(NEW.`from_date` <=> OLD.`from_date`) OR NOT(NEW.`to_date` <=> OLD.`to_date`) OR NOT(NEW.`is_active` <=> OLD.`is_active`) OR NOT(NEW.`conditions_serialized` <=> OLD.`conditions_serialized`) OR NOT(NEW.`actions_serialized` <=> OLD.`actions_serialized`) OR NOT(NEW.`stop_rules_processing` <=> OLD.`stop_rules_processing`) OR NOT(NEW.`sort_order` <=> OLD.`sort_order`) OR NOT(NEW.`simple_action` <=> OLD.`simple_action`) OR NOT(NEW.`discount_amount` <=> OLD.`discount_amount`)) THEN INSERT IGNORE INTO `catalogrule_rule_cl` (`entity_id`) VALUES (NEW.`rule_id`); END IF;
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -4392,9 +4605,12 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalogrule_after_delete AFTER DELETE ON catalogrule FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `catalogrule_rule_cl` (`entity_id`) VALUES (OLD.`rule_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalogrule_after_delete AFTER DELETE ON catalogrule FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `catalogrule_rule_cl` (`entity_id`) VALUES (OLD.`rule_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -4583,9 +4799,12 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalogrule_product_price_after_insert AFTER INSERT ON catalogrule_product_price FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (NEW.`product_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalogrule_product_price_after_insert AFTER INSERT ON catalogrule_product_price FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (NEW.`product_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -4601,9 +4820,12 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalogrule_product_price_after_update AFTER UPDATE ON catalogrule_product_price FOR EACH ROW
-BEGIN
-IF (NOT(NEW.`rule_product_price_id` <=> OLD.`rule_product_price_id`) OR NOT(NEW.`rule_date` <=> OLD.`rule_date`) OR NOT(NEW.`customer_group_id` <=> OLD.`customer_group_id`) OR NOT(NEW.`product_id` <=> OLD.`product_id`) OR NOT(NEW.`rule_price` <=> OLD.`rule_price`) OR NOT(NEW.`website_id` <=> OLD.`website_id`) OR NOT(NEW.`latest_start_date` <=> OLD.`latest_start_date`) OR NOT(NEW.`earliest_end_date` <=> OLD.`earliest_end_date`)) THEN INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (NEW.`product_id`); END IF;
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalogrule_product_price_after_update AFTER UPDATE ON catalogrule_product_price FOR EACH ROW
+
+BEGIN
+
+IF (NOT(NEW.`rule_product_price_id` <=> OLD.`rule_product_price_id`) OR NOT(NEW.`rule_date` <=> OLD.`rule_date`) OR NOT(NEW.`customer_group_id` <=> OLD.`customer_group_id`) OR NOT(NEW.`product_id` <=> OLD.`product_id`) OR NOT(NEW.`rule_price` <=> OLD.`rule_price`) OR NOT(NEW.`website_id` <=> OLD.`website_id`) OR NOT(NEW.`latest_start_date` <=> OLD.`latest_start_date`) OR NOT(NEW.`earliest_end_date` <=> OLD.`earliest_end_date`)) THEN INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (NEW.`product_id`); END IF;
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -4619,9 +4841,12 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_catalogrule_product_price_after_delete AFTER DELETE ON catalogrule_product_price FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (OLD.`product_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_catalogrule_product_price_after_delete AFTER DELETE ON catalogrule_product_price FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `catalog_product_price_cl` (`entity_id`) VALUES (OLD.`product_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -7408,9 +7633,12 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_inventory_source_item_after_insert AFTER INSERT ON inventory_source_item FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `inventory_cl` (`entity_id`) VALUES (NEW.`source_item_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_inventory_source_item_after_insert AFTER INSERT ON inventory_source_item FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `inventory_cl` (`entity_id`) VALUES (NEW.`source_item_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -7426,9 +7654,12 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_inventory_source_item_after_update AFTER UPDATE ON inventory_source_item FOR EACH ROW
-BEGIN
-IF (NOT(NEW.`source_item_id` <=> OLD.`source_item_id`) OR NOT(NEW.`source_code` <=> OLD.`source_code`) OR NOT(NEW.`sku` <=> OLD.`sku`) OR NOT(NEW.`quantity` <=> OLD.`quantity`) OR NOT(NEW.`status` <=> OLD.`status`)) THEN INSERT IGNORE INTO `inventory_cl` (`entity_id`) VALUES (NEW.`source_item_id`); END IF;
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_inventory_source_item_after_update AFTER UPDATE ON inventory_source_item FOR EACH ROW
+
+BEGIN
+
+IF (NOT(NEW.`source_item_id` <=> OLD.`source_item_id`) OR NOT(NEW.`source_code` <=> OLD.`source_code`) OR NOT(NEW.`sku` <=> OLD.`sku`) OR NOT(NEW.`quantity` <=> OLD.`quantity`) OR NOT(NEW.`status` <=> OLD.`status`)) THEN INSERT IGNORE INTO `inventory_cl` (`entity_id`) VALUES (NEW.`source_item_id`); END IF;
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -7444,9 +7675,12 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_inventory_source_item_after_delete AFTER DELETE ON inventory_source_item FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `inventory_cl` (`entity_id`) VALUES (OLD.`source_item_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_inventory_source_item_after_delete AFTER DELETE ON inventory_source_item FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `inventory_cl` (`entity_id`) VALUES (OLD.`source_item_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -11074,9 +11308,12 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_sales_order_after_insert AFTER INSERT ON sales_order FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `sales_order_data_exporter_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_sales_order_after_insert AFTER INSERT ON sales_order FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `sales_order_data_exporter_cl` (`entity_id`) VALUES (NEW.`entity_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -11092,9 +11329,12 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_sales_order_after_update AFTER UPDATE ON sales_order FOR EACH ROW
-BEGIN
-IF (NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`state` <=> OLD.`state`) OR NOT(NEW.`status` <=> OLD.`status`) OR NOT(NEW.`coupon_code` <=> OLD.`coupon_code`) OR NOT(NEW.`protect_code` <=> OLD.`protect_code`) OR NOT(NEW.`shipping_description` <=> OLD.`shipping_description`) OR NOT(NEW.`is_virtual` <=> OLD.`is_virtual`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`customer_id` <=> OLD.`customer_id`) OR NOT(NEW.`base_discount_amount` <=> OLD.`base_discount_amount`) OR NOT(NEW.`base_discount_canceled` <=> OLD.`base_discount_canceled`) OR NOT(NEW.`base_discount_invoiced` <=> OLD.`base_discount_invoiced`) OR NOT(NEW.`base_discount_refunded` <=> OLD.`base_discount_refunded`) OR NOT(NEW.`base_grand_total` <=> OLD.`base_grand_total`) OR NOT(NEW.`base_shipping_amount` <=> OLD.`base_shipping_amount`) OR NOT(NEW.`base_shipping_canceled` <=> OLD.`base_shipping_canceled`) OR NOT(NEW.`base_shipping_invoiced` <=> OLD.`base_shipping_invoiced`) OR NOT(NEW.`base_shipping_refunded` <=> OLD.`base_shipping_refunded`) OR NOT(NEW.`base_shipping_tax_amount` <=> OLD.`base_shipping_tax_amount`) OR NOT(NEW.`base_shipping_tax_refunded` <=> OLD.`base_shipping_tax_refunded`) OR NOT(NEW.`base_subtotal` <=> OLD.`base_subtotal`) OR NOT(NEW.`base_subtotal_canceled` <=> OLD.`base_subtotal_canceled`) OR NOT(NEW.`base_subtotal_invoiced` <=> OLD.`base_subtotal_invoiced`) OR NOT(NEW.`base_subtotal_refunded` <=> OLD.`base_subtotal_refunded`) OR NOT(NEW.`base_tax_amount` <=> OLD.`base_tax_amount`) OR NOT(NEW.`base_tax_canceled` <=> OLD.`base_tax_canceled`) OR NOT(NEW.`base_tax_invoiced` <=> OLD.`base_tax_invoiced`) OR NOT(NEW.`base_tax_refunded` <=> OLD.`base_tax_refunded`) OR NOT(NEW.`base_to_global_rate` <=> OLD.`base_to_global_rate`) OR NOT(NEW.`base_to_order_rate` <=> OLD.`base_to_order_rate`) OR NOT(NEW.`base_total_canceled` <=> OLD.`base_total_canceled`) OR NOT(NEW.`base_total_invoiced` <=> OLD.`base_total_invoiced`) OR NOT(NEW.`base_total_invoiced_cost` <=> OLD.`base_total_invoiced_cost`) OR NOT(NEW.`base_total_offline_refunded` <=> OLD.`base_total_offline_refunded`) OR NOT(NEW.`base_total_online_refunded` <=> OLD.`base_total_online_refunded`) OR NOT(NEW.`base_total_paid` <=> OLD.`base_total_paid`) OR NOT(NEW.`base_total_qty_ordered` <=> OLD.`base_total_qty_ordered`) OR NOT(NEW.`base_total_refunded` <=> OLD.`base_total_refunded`) OR NOT(NEW.`discount_amount` <=> OLD.`discount_amount`) OR NOT(NEW.`discount_canceled` <=> OLD.`discount_canceled`) OR NOT(NEW.`discount_invoiced` <=> OLD.`discount_invoiced`) OR NOT(NEW.`discount_refunded` <=> OLD.`discount_refunded`) OR NOT(NEW.`grand_total` <=> OLD.`grand_total`) OR NOT(NEW.`shipping_amount` <=> OLD.`shipping_amount`) OR NOT(NEW.`shipping_canceled` <=> OLD.`shipping_canceled`) OR NOT(NEW.`shipping_invoiced` <=> OLD.`shipping_invoiced`) OR NOT(NEW.`shipping_refunded` <=> OLD.`shipping_refunded`) OR NOT(NEW.`shipping_tax_amount` <=> OLD.`shipping_tax_amount`) OR NOT(NEW.`shipping_tax_refunded` <=> OLD.`shipping_tax_refunded`) OR NOT(NEW.`store_to_base_rate` <=> OLD.`store_to_base_rate`) OR NOT(NEW.`store_to_order_rate` <=> OLD.`store_to_order_rate`) OR NOT(NEW.`subtotal` <=> OLD.`subtotal`) OR NOT(NEW.`subtotal_canceled` <=> OLD.`subtotal_canceled`) OR NOT(NEW.`subtotal_invoiced` <=> OLD.`subtotal_invoiced`) OR NOT(NEW.`subtotal_refunded` <=> OLD.`subtotal_refunded`) OR NOT(NEW.`tax_amount` <=> OLD.`tax_amount`) OR NOT(NEW.`tax_canceled` <=> OLD.`tax_canceled`) OR NOT(NEW.`tax_invoiced` <=> OLD.`tax_invoiced`) OR NOT(NEW.`tax_refunded` <=> OLD.`tax_refunded`) OR NOT(NEW.`total_canceled` <=> OLD.`total_canceled`) OR NOT(NEW.`total_invoiced` <=> OLD.`total_invoiced`) OR NOT(NEW.`total_offline_refunded` <=> OLD.`total_offline_refunded`) OR NOT(NEW.`total_online_refunded` <=> OLD.`total_online_refunded`) OR NOT(NEW.`total_paid` <=> OLD.`total_paid`) OR NOT(NEW.`total_qty_ordered` <=> OLD.`total_qty_ordered`) OR NOT(NEW.`total_refunded` <=> OLD.`total_refunded`) OR NOT(NEW.`can_ship_partially` <=> OLD.`can_ship_partially`) OR NOT(NEW.`can_ship_partially_item` <=> OLD.`can_ship_partially_item`) OR NOT(NEW.`customer_is_guest` <=> OLD.`customer_is_guest`) OR NOT(NEW.`customer_note_notify` <=> OLD.`customer_note_notify`) OR NOT(NEW.`billing_address_id` <=> OLD.`billing_address_id`) OR NOT(NEW.`customer_group_id` <=> OLD.`customer_group_id`) OR NOT(NEW.`edit_increment` <=> OLD.`edit_increment`) OR NOT(NEW.`email_sent` <=> OLD.`email_sent`) OR NOT(NEW.`send_email` <=> OLD.`send_email`) OR NOT(NEW.`forced_shipment_with_invoice` <=> OLD.`forced_shipment_with_invoice`) OR NOT(NEW.`payment_auth_expiration` <=> OLD.`payment_auth_expiration`) OR NOT(NEW.`quote_address_id` <=> OLD.`quote_address_id`) OR NOT(NEW.`quote_id` <=> OLD.`quote_id`) OR NOT(NEW.`shipping_address_id` <=> OLD.`shipping_address_id`) OR NOT(NEW.`adjustment_negative` <=> OLD.`adjustment_negative`) OR NOT(NEW.`adjustment_positive` <=> OLD.`adjustment_positive`) OR NOT(NEW.`base_adjustment_negative` <=> OLD.`base_adjustment_negative`) OR NOT(NEW.`base_adjustment_positive` <=> OLD.`base_adjustment_positive`) OR NOT(NEW.`base_shipping_discount_amount` <=> OLD.`base_shipping_discount_amount`) OR NOT(NEW.`base_subtotal_incl_tax` <=> OLD.`base_subtotal_incl_tax`) OR NOT(NEW.`base_total_due` <=> OLD.`base_total_due`) OR NOT(NEW.`payment_authorization_amount` <=> OLD.`payment_authorization_amount`) OR NOT(NEW.`shipping_discount_amount` <=> OLD.`shipping_discount_amount`) OR NOT(NEW.`subtotal_incl_tax` <=> OLD.`subtotal_incl_tax`) OR NOT(NEW.`total_due` <=> OLD.`total_due`) OR NOT(NEW.`weight` <=> OLD.`weight`) OR NOT(NEW.`customer_dob` <=> OLD.`customer_dob`) OR NOT(NEW.`increment_id` <=> OLD.`increment_id`) OR NOT(NEW.`applied_rule_ids` <=> OLD.`applied_rule_ids`) OR NOT(NEW.`base_currency_code` <=> OLD.`base_currency_code`) OR NOT(NEW.`customer_email` <=> OLD.`customer_email`) OR NOT(NEW.`customer_firstname` <=> OLD.`customer_firstname`) OR NOT(NEW.`customer_lastname` <=> OLD.`customer_lastname`) OR NOT(NEW.`customer_middlename` <=> OLD.`customer_middlename`) OR NOT(NEW.`customer_prefix` <=> OLD.`customer_prefix`) OR NOT(NEW.`customer_suffix` <=> OLD.`customer_suffix`) OR NOT(NEW.`customer_taxvat` <=> OLD.`customer_taxvat`) OR NOT(NEW.`discount_description` <=> OLD.`discount_description`) OR NOT(NEW.`ext_customer_id` <=> OLD.`ext_customer_id`) OR NOT(NEW.`ext_order_id` <=> OLD.`ext_order_id`) OR NOT(NEW.`global_currency_code` <=> OLD.`global_currency_code`) OR NOT(NEW.`hold_before_state` <=> OLD.`hold_before_state`) OR NOT(NEW.`hold_before_status` <=> OLD.`hold_before_status`) OR NOT(NEW.`order_currency_code` <=> OLD.`order_currency_code`) OR NOT(NEW.`original_increment_id` <=> OLD.`original_increment_id`) OR NOT(NEW.`relation_child_id` <=> OLD.`relation_child_id`) OR NOT(NEW.`relation_child_real_id` <=> OLD.`relation_child_real_id`) OR NOT(NEW.`relation_parent_id` <=> OLD.`relation_parent_id`) OR NOT(NEW.`relation_parent_real_id` <=> OLD.`relation_parent_real_id`) OR NOT(NEW.`remote_ip` <=> OLD.`remote_ip`) OR NOT(NEW.`shipping_method` <=> OLD.`shipping_method`) OR NOT(NEW.`store_currency_code` <=> OLD.`store_currency_code`) OR NOT(NEW.`store_name` <=> OLD.`store_name`) OR NOT(NEW.`x_forwarded_for` <=> OLD.`x_forwarded_for`) OR NOT(NEW.`customer_note` <=> OLD.`customer_note`) OR NOT(NEW.`created_at` <=> OLD.`created_at`) OR NOT(NEW.`total_item_count` <=> OLD.`total_item_count`) OR NOT(NEW.`customer_gender` <=> OLD.`customer_gender`) OR NOT(NEW.`discount_tax_compensation_amount` <=> OLD.`discount_tax_compensation_amount`) OR NOT(NEW.`base_discount_tax_compensation_amount` <=> OLD.`base_discount_tax_compensation_amount`) OR NOT(NEW.`shipping_discount_tax_compensation_amount` <=> OLD.`shipping_discount_tax_compensation_amount`) OR NOT(NEW.`base_shipping_discount_tax_compensation_amnt` <=> OLD.`base_shipping_discount_tax_compensation_amnt`) OR NOT(NEW.`discount_tax_compensation_invoiced` <=> OLD.`discount_tax_compensation_invoiced`) OR NOT(NEW.`base_discount_tax_compensation_invoiced` <=> OLD.`base_discount_tax_compensation_invoiced`) OR NOT(NEW.`discount_tax_compensation_refunded` <=> OLD.`discount_tax_compensation_refunded`) OR NOT(NEW.`base_discount_tax_compensation_refunded` <=> OLD.`base_discount_tax_compensation_refunded`) OR NOT(NEW.`shipping_incl_tax` <=> OLD.`shipping_incl_tax`) OR NOT(NEW.`base_shipping_incl_tax` <=> OLD.`base_shipping_incl_tax`) OR NOT(NEW.`coupon_rule_name` <=> OLD.`coupon_rule_name`) OR NOT(NEW.`gift_message_id` <=> OLD.`gift_message_id`) OR NOT(NEW.`paypal_ipn_customer_notified` <=> OLD.`paypal_ipn_customer_notified`) OR NOT(NEW.`dispute_status` <=> OLD.`dispute_status`)) THEN INSERT IGNORE INTO `sales_order_data_exporter_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_sales_order_after_update AFTER UPDATE ON sales_order FOR EACH ROW
+
+BEGIN
+
+IF (NOT(NEW.`entity_id` <=> OLD.`entity_id`) OR NOT(NEW.`state` <=> OLD.`state`) OR NOT(NEW.`status` <=> OLD.`status`) OR NOT(NEW.`coupon_code` <=> OLD.`coupon_code`) OR NOT(NEW.`protect_code` <=> OLD.`protect_code`) OR NOT(NEW.`shipping_description` <=> OLD.`shipping_description`) OR NOT(NEW.`is_virtual` <=> OLD.`is_virtual`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`customer_id` <=> OLD.`customer_id`) OR NOT(NEW.`base_discount_amount` <=> OLD.`base_discount_amount`) OR NOT(NEW.`base_discount_canceled` <=> OLD.`base_discount_canceled`) OR NOT(NEW.`base_discount_invoiced` <=> OLD.`base_discount_invoiced`) OR NOT(NEW.`base_discount_refunded` <=> OLD.`base_discount_refunded`) OR NOT(NEW.`base_grand_total` <=> OLD.`base_grand_total`) OR NOT(NEW.`base_shipping_amount` <=> OLD.`base_shipping_amount`) OR NOT(NEW.`base_shipping_canceled` <=> OLD.`base_shipping_canceled`) OR NOT(NEW.`base_shipping_invoiced` <=> OLD.`base_shipping_invoiced`) OR NOT(NEW.`base_shipping_refunded` <=> OLD.`base_shipping_refunded`) OR NOT(NEW.`base_shipping_tax_amount` <=> OLD.`base_shipping_tax_amount`) OR NOT(NEW.`base_shipping_tax_refunded` <=> OLD.`base_shipping_tax_refunded`) OR NOT(NEW.`base_subtotal` <=> OLD.`base_subtotal`) OR NOT(NEW.`base_subtotal_canceled` <=> OLD.`base_subtotal_canceled`) OR NOT(NEW.`base_subtotal_invoiced` <=> OLD.`base_subtotal_invoiced`) OR NOT(NEW.`base_subtotal_refunded` <=> OLD.`base_subtotal_refunded`) OR NOT(NEW.`base_tax_amount` <=> OLD.`base_tax_amount`) OR NOT(NEW.`base_tax_canceled` <=> OLD.`base_tax_canceled`) OR NOT(NEW.`base_tax_invoiced` <=> OLD.`base_tax_invoiced`) OR NOT(NEW.`base_tax_refunded` <=> OLD.`base_tax_refunded`) OR NOT(NEW.`base_to_global_rate` <=> OLD.`base_to_global_rate`) OR NOT(NEW.`base_to_order_rate` <=> OLD.`base_to_order_rate`) OR NOT(NEW.`base_total_canceled` <=> OLD.`base_total_canceled`) OR NOT(NEW.`base_total_invoiced` <=> OLD.`base_total_invoiced`) OR NOT(NEW.`base_total_invoiced_cost` <=> OLD.`base_total_invoiced_cost`) OR NOT(NEW.`base_total_offline_refunded` <=> OLD.`base_total_offline_refunded`) OR NOT(NEW.`base_total_online_refunded` <=> OLD.`base_total_online_refunded`) OR NOT(NEW.`base_total_paid` <=> OLD.`base_total_paid`) OR NOT(NEW.`base_total_qty_ordered` <=> OLD.`base_total_qty_ordered`) OR NOT(NEW.`base_total_refunded` <=> OLD.`base_total_refunded`) OR NOT(NEW.`discount_amount` <=> OLD.`discount_amount`) OR NOT(NEW.`discount_canceled` <=> OLD.`discount_canceled`) OR NOT(NEW.`discount_invoiced` <=> OLD.`discount_invoiced`) OR NOT(NEW.`discount_refunded` <=> OLD.`discount_refunded`) OR NOT(NEW.`grand_total` <=> OLD.`grand_total`) OR NOT(NEW.`shipping_amount` <=> OLD.`shipping_amount`) OR NOT(NEW.`shipping_canceled` <=> OLD.`shipping_canceled`) OR NOT(NEW.`shipping_invoiced` <=> OLD.`shipping_invoiced`) OR NOT(NEW.`shipping_refunded` <=> OLD.`shipping_refunded`) OR NOT(NEW.`shipping_tax_amount` <=> OLD.`shipping_tax_amount`) OR NOT(NEW.`shipping_tax_refunded` <=> OLD.`shipping_tax_refunded`) OR NOT(NEW.`store_to_base_rate` <=> OLD.`store_to_base_rate`) OR NOT(NEW.`store_to_order_rate` <=> OLD.`store_to_order_rate`) OR NOT(NEW.`subtotal` <=> OLD.`subtotal`) OR NOT(NEW.`subtotal_canceled` <=> OLD.`subtotal_canceled`) OR NOT(NEW.`subtotal_invoiced` <=> OLD.`subtotal_invoiced`) OR NOT(NEW.`subtotal_refunded` <=> OLD.`subtotal_refunded`) OR NOT(NEW.`tax_amount` <=> OLD.`tax_amount`) OR NOT(NEW.`tax_canceled` <=> OLD.`tax_canceled`) OR NOT(NEW.`tax_invoiced` <=> OLD.`tax_invoiced`) OR NOT(NEW.`tax_refunded` <=> OLD.`tax_refunded`) OR NOT(NEW.`total_canceled` <=> OLD.`total_canceled`) OR NOT(NEW.`total_invoiced` <=> OLD.`total_invoiced`) OR NOT(NEW.`total_offline_refunded` <=> OLD.`total_offline_refunded`) OR NOT(NEW.`total_online_refunded` <=> OLD.`total_online_refunded`) OR NOT(NEW.`total_paid` <=> OLD.`total_paid`) OR NOT(NEW.`total_qty_ordered` <=> OLD.`total_qty_ordered`) OR NOT(NEW.`total_refunded` <=> OLD.`total_refunded`) OR NOT(NEW.`can_ship_partially` <=> OLD.`can_ship_partially`) OR NOT(NEW.`can_ship_partially_item` <=> OLD.`can_ship_partially_item`) OR NOT(NEW.`customer_is_guest` <=> OLD.`customer_is_guest`) OR NOT(NEW.`customer_note_notify` <=> OLD.`customer_note_notify`) OR NOT(NEW.`billing_address_id` <=> OLD.`billing_address_id`) OR NOT(NEW.`customer_group_id` <=> OLD.`customer_group_id`) OR NOT(NEW.`edit_increment` <=> OLD.`edit_increment`) OR NOT(NEW.`email_sent` <=> OLD.`email_sent`) OR NOT(NEW.`send_email` <=> OLD.`send_email`) OR NOT(NEW.`forced_shipment_with_invoice` <=> OLD.`forced_shipment_with_invoice`) OR NOT(NEW.`payment_auth_expiration` <=> OLD.`payment_auth_expiration`) OR NOT(NEW.`quote_address_id` <=> OLD.`quote_address_id`) OR NOT(NEW.`quote_id` <=> OLD.`quote_id`) OR NOT(NEW.`shipping_address_id` <=> OLD.`shipping_address_id`) OR NOT(NEW.`adjustment_negative` <=> OLD.`adjustment_negative`) OR NOT(NEW.`adjustment_positive` <=> OLD.`adjustment_positive`) OR NOT(NEW.`base_adjustment_negative` <=> OLD.`base_adjustment_negative`) OR NOT(NEW.`base_adjustment_positive` <=> OLD.`base_adjustment_positive`) OR NOT(NEW.`base_shipping_discount_amount` <=> OLD.`base_shipping_discount_amount`) OR NOT(NEW.`base_subtotal_incl_tax` <=> OLD.`base_subtotal_incl_tax`) OR NOT(NEW.`base_total_due` <=> OLD.`base_total_due`) OR NOT(NEW.`payment_authorization_amount` <=> OLD.`payment_authorization_amount`) OR NOT(NEW.`shipping_discount_amount` <=> OLD.`shipping_discount_amount`) OR NOT(NEW.`subtotal_incl_tax` <=> OLD.`subtotal_incl_tax`) OR NOT(NEW.`total_due` <=> OLD.`total_due`) OR NOT(NEW.`weight` <=> OLD.`weight`) OR NOT(NEW.`customer_dob` <=> OLD.`customer_dob`) OR NOT(NEW.`increment_id` <=> OLD.`increment_id`) OR NOT(NEW.`applied_rule_ids` <=> OLD.`applied_rule_ids`) OR NOT(NEW.`base_currency_code` <=> OLD.`base_currency_code`) OR NOT(NEW.`customer_email` <=> OLD.`customer_email`) OR NOT(NEW.`customer_firstname` <=> OLD.`customer_firstname`) OR NOT(NEW.`customer_lastname` <=> OLD.`customer_lastname`) OR NOT(NEW.`customer_middlename` <=> OLD.`customer_middlename`) OR NOT(NEW.`customer_prefix` <=> OLD.`customer_prefix`) OR NOT(NEW.`customer_suffix` <=> OLD.`customer_suffix`) OR NOT(NEW.`customer_taxvat` <=> OLD.`customer_taxvat`) OR NOT(NEW.`discount_description` <=> OLD.`discount_description`) OR NOT(NEW.`ext_customer_id` <=> OLD.`ext_customer_id`) OR NOT(NEW.`ext_order_id` <=> OLD.`ext_order_id`) OR NOT(NEW.`global_currency_code` <=> OLD.`global_currency_code`) OR NOT(NEW.`hold_before_state` <=> OLD.`hold_before_state`) OR NOT(NEW.`hold_before_status` <=> OLD.`hold_before_status`) OR NOT(NEW.`order_currency_code` <=> OLD.`order_currency_code`) OR NOT(NEW.`original_increment_id` <=> OLD.`original_increment_id`) OR NOT(NEW.`relation_child_id` <=> OLD.`relation_child_id`) OR NOT(NEW.`relation_child_real_id` <=> OLD.`relation_child_real_id`) OR NOT(NEW.`relation_parent_id` <=> OLD.`relation_parent_id`) OR NOT(NEW.`relation_parent_real_id` <=> OLD.`relation_parent_real_id`) OR NOT(NEW.`remote_ip` <=> OLD.`remote_ip`) OR NOT(NEW.`shipping_method` <=> OLD.`shipping_method`) OR NOT(NEW.`store_currency_code` <=> OLD.`store_currency_code`) OR NOT(NEW.`store_name` <=> OLD.`store_name`) OR NOT(NEW.`x_forwarded_for` <=> OLD.`x_forwarded_for`) OR NOT(NEW.`customer_note` <=> OLD.`customer_note`) OR NOT(NEW.`created_at` <=> OLD.`created_at`) OR NOT(NEW.`total_item_count` <=> OLD.`total_item_count`) OR NOT(NEW.`customer_gender` <=> OLD.`customer_gender`) OR NOT(NEW.`discount_tax_compensation_amount` <=> OLD.`discount_tax_compensation_amount`) OR NOT(NEW.`base_discount_tax_compensation_amount` <=> OLD.`base_discount_tax_compensation_amount`) OR NOT(NEW.`shipping_discount_tax_compensation_amount` <=> OLD.`shipping_discount_tax_compensation_amount`) OR NOT(NEW.`base_shipping_discount_tax_compensation_amnt` <=> OLD.`base_shipping_discount_tax_compensation_amnt`) OR NOT(NEW.`discount_tax_compensation_invoiced` <=> OLD.`discount_tax_compensation_invoiced`) OR NOT(NEW.`base_discount_tax_compensation_invoiced` <=> OLD.`base_discount_tax_compensation_invoiced`) OR NOT(NEW.`discount_tax_compensation_refunded` <=> OLD.`discount_tax_compensation_refunded`) OR NOT(NEW.`base_discount_tax_compensation_refunded` <=> OLD.`base_discount_tax_compensation_refunded`) OR NOT(NEW.`shipping_incl_tax` <=> OLD.`shipping_incl_tax`) OR NOT(NEW.`base_shipping_incl_tax` <=> OLD.`base_shipping_incl_tax`) OR NOT(NEW.`coupon_rule_name` <=> OLD.`coupon_rule_name`) OR NOT(NEW.`gift_message_id` <=> OLD.`gift_message_id`) OR NOT(NEW.`paypal_ipn_customer_notified` <=> OLD.`paypal_ipn_customer_notified`) OR NOT(NEW.`dispute_status` <=> OLD.`dispute_status`)) THEN INSERT IGNORE INTO `sales_order_data_exporter_cl` (`entity_id`) VALUES (NEW.`entity_id`); END IF;
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -11110,9 +11350,12 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_sales_order_after_delete AFTER DELETE ON sales_order FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `sales_order_data_exporter_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_sales_order_after_delete AFTER DELETE ON sales_order FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `sales_order_data_exporter_cl` (`entity_id`) VALUES (OLD.`entity_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -11457,9 +11700,12 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_sales_order_item_after_insert AFTER INSERT ON sales_order_item FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `sales_order_data_exporter_cl` (`entity_id`) VALUES (NEW.`order_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_sales_order_item_after_insert AFTER INSERT ON sales_order_item FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `sales_order_data_exporter_cl` (`entity_id`) VALUES (NEW.`order_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -11475,9 +11721,12 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_sales_order_item_after_update AFTER UPDATE ON sales_order_item FOR EACH ROW
-BEGIN
-IF (NOT(NEW.`item_id` <=> OLD.`item_id`) OR NOT(NEW.`order_id` <=> OLD.`order_id`) OR NOT(NEW.`parent_item_id` <=> OLD.`parent_item_id`) OR NOT(NEW.`quote_item_id` <=> OLD.`quote_item_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`created_at` <=> OLD.`created_at`) OR NOT(NEW.`product_id` <=> OLD.`product_id`) OR NOT(NEW.`product_type` <=> OLD.`product_type`) OR NOT(NEW.`product_options` <=> OLD.`product_options`) OR NOT(NEW.`weight` <=> OLD.`weight`) OR NOT(NEW.`is_virtual` <=> OLD.`is_virtual`) OR NOT(NEW.`sku` <=> OLD.`sku`) OR NOT(NEW.`name` <=> OLD.`name`) OR NOT(NEW.`description` <=> OLD.`description`) OR NOT(NEW.`applied_rule_ids` <=> OLD.`applied_rule_ids`) OR NOT(NEW.`additional_data` <=> OLD.`additional_data`) OR NOT(NEW.`is_qty_decimal` <=> OLD.`is_qty_decimal`) OR NOT(NEW.`no_discount` <=> OLD.`no_discount`) OR NOT(NEW.`qty_backordered` <=> OLD.`qty_backordered`) OR NOT(NEW.`qty_canceled` <=> OLD.`qty_canceled`) OR NOT(NEW.`qty_invoiced` <=> OLD.`qty_invoiced`) OR NOT(NEW.`qty_ordered` <=> OLD.`qty_ordered`) OR NOT(NEW.`qty_refunded` <=> OLD.`qty_refunded`) OR NOT(NEW.`qty_shipped` <=> OLD.`qty_shipped`) OR NOT(NEW.`base_cost` <=> OLD.`base_cost`) OR NOT(NEW.`price` <=> OLD.`price`) OR NOT(NEW.`base_price` <=> OLD.`base_price`) OR NOT(NEW.`original_price` <=> OLD.`original_price`) OR NOT(NEW.`base_original_price` <=> OLD.`base_original_price`) OR NOT(NEW.`tax_percent` <=> OLD.`tax_percent`) OR NOT(NEW.`tax_amount` <=> OLD.`tax_amount`) OR NOT(NEW.`base_tax_amount` <=> OLD.`base_tax_amount`) OR NOT(NEW.`tax_invoiced` <=> OLD.`tax_invoiced`) OR NOT(NEW.`base_tax_invoiced` <=> OLD.`base_tax_invoiced`) OR NOT(NEW.`discount_percent` <=> OLD.`discount_percent`) OR NOT(NEW.`discount_amount` <=> OLD.`discount_amount`) OR NOT(NEW.`base_discount_amount` <=> OLD.`base_discount_amount`) OR NOT(NEW.`discount_invoiced` <=> OLD.`discount_invoiced`) OR NOT(NEW.`base_discount_invoiced` <=> OLD.`base_discount_invoiced`) OR NOT(NEW.`amount_refunded` <=> OLD.`amount_refunded`) OR NOT(NEW.`base_amount_refunded` <=> OLD.`base_amount_refunded`) OR NOT(NEW.`row_total` <=> OLD.`row_total`) OR NOT(NEW.`base_row_total` <=> OLD.`base_row_total`) OR NOT(NEW.`row_invoiced` <=> OLD.`row_invoiced`) OR NOT(NEW.`base_row_invoiced` <=> OLD.`base_row_invoiced`) OR NOT(NEW.`row_weight` <=> OLD.`row_weight`) OR NOT(NEW.`base_tax_before_discount` <=> OLD.`base_tax_before_discount`) OR NOT(NEW.`tax_before_discount` <=> OLD.`tax_before_discount`) OR NOT(NEW.`ext_order_item_id` <=> OLD.`ext_order_item_id`) OR NOT(NEW.`locked_do_invoice` <=> OLD.`locked_do_invoice`) OR NOT(NEW.`locked_do_ship` <=> OLD.`locked_do_ship`) OR NOT(NEW.`price_incl_tax` <=> OLD.`price_incl_tax`) OR NOT(NEW.`base_price_incl_tax` <=> OLD.`base_price_incl_tax`) OR NOT(NEW.`row_total_incl_tax` <=> OLD.`row_total_incl_tax`) OR NOT(NEW.`base_row_total_incl_tax` <=> OLD.`base_row_total_incl_tax`) OR NOT(NEW.`discount_tax_compensation_amount` <=> OLD.`discount_tax_compensation_amount`) OR NOT(NEW.`base_discount_tax_compensation_amount` <=> OLD.`base_discount_tax_compensation_amount`) OR NOT(NEW.`discount_tax_compensation_invoiced` <=> OLD.`discount_tax_compensation_invoiced`) OR NOT(NEW.`base_discount_tax_compensation_invoiced` <=> OLD.`base_discount_tax_compensation_invoiced`) OR NOT(NEW.`discount_tax_compensation_refunded` <=> OLD.`discount_tax_compensation_refunded`) OR NOT(NEW.`base_discount_tax_compensation_refunded` <=> OLD.`base_discount_tax_compensation_refunded`) OR NOT(NEW.`tax_canceled` <=> OLD.`tax_canceled`) OR NOT(NEW.`discount_tax_compensation_canceled` <=> OLD.`discount_tax_compensation_canceled`) OR NOT(NEW.`tax_refunded` <=> OLD.`tax_refunded`) OR NOT(NEW.`base_tax_refunded` <=> OLD.`base_tax_refunded`) OR NOT(NEW.`discount_refunded` <=> OLD.`discount_refunded`) OR NOT(NEW.`base_discount_refunded` <=> OLD.`base_discount_refunded`) OR NOT(NEW.`gift_message_id` <=> OLD.`gift_message_id`) OR NOT(NEW.`gift_message_available` <=> OLD.`gift_message_available`) OR NOT(NEW.`free_shipping` <=> OLD.`free_shipping`) OR NOT(NEW.`weee_tax_applied` <=> OLD.`weee_tax_applied`) OR NOT(NEW.`weee_tax_applied_amount` <=> OLD.`weee_tax_applied_amount`) OR NOT(NEW.`weee_tax_applied_row_amount` <=> OLD.`weee_tax_applied_row_amount`) OR NOT(NEW.`weee_tax_disposition` <=> OLD.`weee_tax_disposition`) OR NOT(NEW.`weee_tax_row_disposition` <=> OLD.`weee_tax_row_disposition`) OR NOT(NEW.`base_weee_tax_applied_amount` <=> OLD.`base_weee_tax_applied_amount`) OR NOT(NEW.`base_weee_tax_applied_row_amnt` <=> OLD.`base_weee_tax_applied_row_amnt`) OR NOT(NEW.`base_weee_tax_disposition` <=> OLD.`base_weee_tax_disposition`) OR NOT(NEW.`base_weee_tax_row_disposition` <=> OLD.`base_weee_tax_row_disposition`)) THEN INSERT IGNORE INTO `sales_order_data_exporter_cl` (`entity_id`) VALUES (NEW.`order_id`); END IF;
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_sales_order_item_after_update AFTER UPDATE ON sales_order_item FOR EACH ROW
+
+BEGIN
+
+IF (NOT(NEW.`item_id` <=> OLD.`item_id`) OR NOT(NEW.`order_id` <=> OLD.`order_id`) OR NOT(NEW.`parent_item_id` <=> OLD.`parent_item_id`) OR NOT(NEW.`quote_item_id` <=> OLD.`quote_item_id`) OR NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`created_at` <=> OLD.`created_at`) OR NOT(NEW.`product_id` <=> OLD.`product_id`) OR NOT(NEW.`product_type` <=> OLD.`product_type`) OR NOT(NEW.`product_options` <=> OLD.`product_options`) OR NOT(NEW.`weight` <=> OLD.`weight`) OR NOT(NEW.`is_virtual` <=> OLD.`is_virtual`) OR NOT(NEW.`sku` <=> OLD.`sku`) OR NOT(NEW.`name` <=> OLD.`name`) OR NOT(NEW.`description` <=> OLD.`description`) OR NOT(NEW.`applied_rule_ids` <=> OLD.`applied_rule_ids`) OR NOT(NEW.`additional_data` <=> OLD.`additional_data`) OR NOT(NEW.`is_qty_decimal` <=> OLD.`is_qty_decimal`) OR NOT(NEW.`no_discount` <=> OLD.`no_discount`) OR NOT(NEW.`qty_backordered` <=> OLD.`qty_backordered`) OR NOT(NEW.`qty_canceled` <=> OLD.`qty_canceled`) OR NOT(NEW.`qty_invoiced` <=> OLD.`qty_invoiced`) OR NOT(NEW.`qty_ordered` <=> OLD.`qty_ordered`) OR NOT(NEW.`qty_refunded` <=> OLD.`qty_refunded`) OR NOT(NEW.`qty_shipped` <=> OLD.`qty_shipped`) OR NOT(NEW.`base_cost` <=> OLD.`base_cost`) OR NOT(NEW.`price` <=> OLD.`price`) OR NOT(NEW.`base_price` <=> OLD.`base_price`) OR NOT(NEW.`original_price` <=> OLD.`original_price`) OR NOT(NEW.`base_original_price` <=> OLD.`base_original_price`) OR NOT(NEW.`tax_percent` <=> OLD.`tax_percent`) OR NOT(NEW.`tax_amount` <=> OLD.`tax_amount`) OR NOT(NEW.`base_tax_amount` <=> OLD.`base_tax_amount`) OR NOT(NEW.`tax_invoiced` <=> OLD.`tax_invoiced`) OR NOT(NEW.`base_tax_invoiced` <=> OLD.`base_tax_invoiced`) OR NOT(NEW.`discount_percent` <=> OLD.`discount_percent`) OR NOT(NEW.`discount_amount` <=> OLD.`discount_amount`) OR NOT(NEW.`base_discount_amount` <=> OLD.`base_discount_amount`) OR NOT(NEW.`discount_invoiced` <=> OLD.`discount_invoiced`) OR NOT(NEW.`base_discount_invoiced` <=> OLD.`base_discount_invoiced`) OR NOT(NEW.`amount_refunded` <=> OLD.`amount_refunded`) OR NOT(NEW.`base_amount_refunded` <=> OLD.`base_amount_refunded`) OR NOT(NEW.`row_total` <=> OLD.`row_total`) OR NOT(NEW.`base_row_total` <=> OLD.`base_row_total`) OR NOT(NEW.`row_invoiced` <=> OLD.`row_invoiced`) OR NOT(NEW.`base_row_invoiced` <=> OLD.`base_row_invoiced`) OR NOT(NEW.`row_weight` <=> OLD.`row_weight`) OR NOT(NEW.`base_tax_before_discount` <=> OLD.`base_tax_before_discount`) OR NOT(NEW.`tax_before_discount` <=> OLD.`tax_before_discount`) OR NOT(NEW.`ext_order_item_id` <=> OLD.`ext_order_item_id`) OR NOT(NEW.`locked_do_invoice` <=> OLD.`locked_do_invoice`) OR NOT(NEW.`locked_do_ship` <=> OLD.`locked_do_ship`) OR NOT(NEW.`price_incl_tax` <=> OLD.`price_incl_tax`) OR NOT(NEW.`base_price_incl_tax` <=> OLD.`base_price_incl_tax`) OR NOT(NEW.`row_total_incl_tax` <=> OLD.`row_total_incl_tax`) OR NOT(NEW.`base_row_total_incl_tax` <=> OLD.`base_row_total_incl_tax`) OR NOT(NEW.`discount_tax_compensation_amount` <=> OLD.`discount_tax_compensation_amount`) OR NOT(NEW.`base_discount_tax_compensation_amount` <=> OLD.`base_discount_tax_compensation_amount`) OR NOT(NEW.`discount_tax_compensation_invoiced` <=> OLD.`discount_tax_compensation_invoiced`) OR NOT(NEW.`base_discount_tax_compensation_invoiced` <=> OLD.`base_discount_tax_compensation_invoiced`) OR NOT(NEW.`discount_tax_compensation_refunded` <=> OLD.`discount_tax_compensation_refunded`) OR NOT(NEW.`base_discount_tax_compensation_refunded` <=> OLD.`base_discount_tax_compensation_refunded`) OR NOT(NEW.`tax_canceled` <=> OLD.`tax_canceled`) OR NOT(NEW.`discount_tax_compensation_canceled` <=> OLD.`discount_tax_compensation_canceled`) OR NOT(NEW.`tax_refunded` <=> OLD.`tax_refunded`) OR NOT(NEW.`base_tax_refunded` <=> OLD.`base_tax_refunded`) OR NOT(NEW.`discount_refunded` <=> OLD.`discount_refunded`) OR NOT(NEW.`base_discount_refunded` <=> OLD.`base_discount_refunded`) OR NOT(NEW.`gift_message_id` <=> OLD.`gift_message_id`) OR NOT(NEW.`gift_message_available` <=> OLD.`gift_message_available`) OR NOT(NEW.`free_shipping` <=> OLD.`free_shipping`) OR NOT(NEW.`weee_tax_applied` <=> OLD.`weee_tax_applied`) OR NOT(NEW.`weee_tax_applied_amount` <=> OLD.`weee_tax_applied_amount`) OR NOT(NEW.`weee_tax_applied_row_amount` <=> OLD.`weee_tax_applied_row_amount`) OR NOT(NEW.`weee_tax_disposition` <=> OLD.`weee_tax_disposition`) OR NOT(NEW.`weee_tax_row_disposition` <=> OLD.`weee_tax_row_disposition`) OR NOT(NEW.`base_weee_tax_applied_amount` <=> OLD.`base_weee_tax_applied_amount`) OR NOT(NEW.`base_weee_tax_applied_row_amnt` <=> OLD.`base_weee_tax_applied_row_amnt`) OR NOT(NEW.`base_weee_tax_disposition` <=> OLD.`base_weee_tax_disposition`) OR NOT(NEW.`base_weee_tax_row_disposition` <=> OLD.`base_weee_tax_row_disposition`)) THEN INSERT IGNORE INTO `sales_order_data_exporter_cl` (`entity_id`) VALUES (NEW.`order_id`); END IF;
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -11493,9 +11742,12 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_sales_order_item_after_delete AFTER DELETE ON sales_order_item FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `sales_order_data_exporter_cl` (`entity_id`) VALUES (OLD.`order_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_sales_order_item_after_delete AFTER DELETE ON sales_order_item FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `sales_order_data_exporter_cl` (`entity_id`) VALUES (OLD.`order_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -11612,9 +11864,12 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_sales_order_status_after_insert AFTER INSERT ON sales_order_status FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `sales_order_status_data_exporter_cl` (`entity_id`) VALUES (NEW.`status`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_sales_order_status_after_insert AFTER INSERT ON sales_order_status FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `sales_order_status_data_exporter_cl` (`entity_id`) VALUES (NEW.`status`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -11630,9 +11885,12 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_sales_order_status_after_update AFTER UPDATE ON sales_order_status FOR EACH ROW
-BEGIN
-IF (NOT(NEW.`status` <=> OLD.`status`) OR NOT(NEW.`label` <=> OLD.`label`)) THEN INSERT IGNORE INTO `sales_order_status_data_exporter_cl` (`entity_id`) VALUES (NEW.`status`); END IF;
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_sales_order_status_after_update AFTER UPDATE ON sales_order_status FOR EACH ROW
+
+BEGIN
+
+IF (NOT(NEW.`status` <=> OLD.`status`) OR NOT(NEW.`label` <=> OLD.`label`)) THEN INSERT IGNORE INTO `sales_order_status_data_exporter_cl` (`entity_id`) VALUES (NEW.`status`); END IF;
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -11648,9 +11906,12 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_sales_order_status_after_delete AFTER DELETE ON sales_order_status FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `sales_order_status_data_exporter_cl` (`entity_id`) VALUES (OLD.`status`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_sales_order_status_after_delete AFTER DELETE ON sales_order_status FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `sales_order_status_data_exporter_cl` (`entity_id`) VALUES (OLD.`status`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -11883,9 +12144,12 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_sales_payment_transaction_after_insert AFTER INSERT ON sales_payment_transaction FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `sales_order_data_exporter_cl` (`entity_id`) VALUES (NEW.`order_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_sales_payment_transaction_after_insert AFTER INSERT ON sales_payment_transaction FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `sales_order_data_exporter_cl` (`entity_id`) VALUES (NEW.`order_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -11901,9 +12165,12 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_sales_payment_transaction_after_update AFTER UPDATE ON sales_payment_transaction FOR EACH ROW
-BEGIN
-IF (NOT(NEW.`transaction_id` <=> OLD.`transaction_id`) OR NOT(NEW.`parent_id` <=> OLD.`parent_id`) OR NOT(NEW.`order_id` <=> OLD.`order_id`) OR NOT(NEW.`payment_id` <=> OLD.`payment_id`) OR NOT(NEW.`txn_id` <=> OLD.`txn_id`) OR NOT(NEW.`parent_txn_id` <=> OLD.`parent_txn_id`) OR NOT(NEW.`txn_type` <=> OLD.`txn_type`) OR NOT(NEW.`is_closed` <=> OLD.`is_closed`) OR NOT(NEW.`additional_information` <=> OLD.`additional_information`) OR NOT(NEW.`created_at` <=> OLD.`created_at`)) THEN INSERT IGNORE INTO `sales_order_data_exporter_cl` (`entity_id`) VALUES (NEW.`order_id`); END IF;
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_sales_payment_transaction_after_update AFTER UPDATE ON sales_payment_transaction FOR EACH ROW
+
+BEGIN
+
+IF (NOT(NEW.`transaction_id` <=> OLD.`transaction_id`) OR NOT(NEW.`parent_id` <=> OLD.`parent_id`) OR NOT(NEW.`order_id` <=> OLD.`order_id`) OR NOT(NEW.`payment_id` <=> OLD.`payment_id`) OR NOT(NEW.`txn_id` <=> OLD.`txn_id`) OR NOT(NEW.`parent_txn_id` <=> OLD.`parent_txn_id`) OR NOT(NEW.`txn_type` <=> OLD.`txn_type`) OR NOT(NEW.`is_closed` <=> OLD.`is_closed`) OR NOT(NEW.`additional_information` <=> OLD.`additional_information`) OR NOT(NEW.`created_at` <=> OLD.`created_at`)) THEN INSERT IGNORE INTO `sales_order_data_exporter_cl` (`entity_id`) VALUES (NEW.`order_id`); END IF;
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -11919,9 +12186,12 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_sales_payment_transaction_after_delete AFTER DELETE ON sales_payment_transaction FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `sales_order_data_exporter_cl` (`entity_id`) VALUES (OLD.`order_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_sales_payment_transaction_after_delete AFTER DELETE ON sales_payment_transaction FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `sales_order_data_exporter_cl` (`entity_id`) VALUES (OLD.`order_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -13106,9 +13376,12 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_store_after_insert AFTER INSERT ON store FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `store_data_exporter_cl` (`entity_id`) VALUES (NEW.`website_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_store_after_insert AFTER INSERT ON store FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `store_data_exporter_cl` (`entity_id`) VALUES (NEW.`website_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -13124,9 +13397,12 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_store_after_update AFTER UPDATE ON store FOR EACH ROW
-BEGIN
-IF (NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`code` <=> OLD.`code`) OR NOT(NEW.`website_id` <=> OLD.`website_id`) OR NOT(NEW.`group_id` <=> OLD.`group_id`) OR NOT(NEW.`name` <=> OLD.`name`) OR NOT(NEW.`sort_order` <=> OLD.`sort_order`) OR NOT(NEW.`is_active` <=> OLD.`is_active`)) THEN INSERT IGNORE INTO `store_data_exporter_cl` (`entity_id`) VALUES (NEW.`website_id`); END IF;
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_store_after_update AFTER UPDATE ON store FOR EACH ROW
+
+BEGIN
+
+IF (NOT(NEW.`store_id` <=> OLD.`store_id`) OR NOT(NEW.`code` <=> OLD.`code`) OR NOT(NEW.`website_id` <=> OLD.`website_id`) OR NOT(NEW.`group_id` <=> OLD.`group_id`) OR NOT(NEW.`name` <=> OLD.`name`) OR NOT(NEW.`sort_order` <=> OLD.`sort_order`) OR NOT(NEW.`is_active` <=> OLD.`is_active`)) THEN INSERT IGNORE INTO `store_data_exporter_cl` (`entity_id`) VALUES (NEW.`website_id`); END IF;
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -13142,9 +13418,12 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_store_after_delete AFTER DELETE ON store FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `store_data_exporter_cl` (`entity_id`) VALUES (OLD.`website_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_store_after_delete AFTER DELETE ON store FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `store_data_exporter_cl` (`entity_id`) VALUES (OLD.`website_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -13216,9 +13495,12 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_store_group_after_insert AFTER INSERT ON store_group FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `store_data_exporter_cl` (`entity_id`) VALUES (NEW.`website_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_store_group_after_insert AFTER INSERT ON store_group FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `store_data_exporter_cl` (`entity_id`) VALUES (NEW.`website_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -13234,9 +13516,12 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_store_group_after_update AFTER UPDATE ON store_group FOR EACH ROW
-BEGIN
-IF (NOT(NEW.`group_id` <=> OLD.`group_id`) OR NOT(NEW.`website_id` <=> OLD.`website_id`) OR NOT(NEW.`name` <=> OLD.`name`) OR NOT(NEW.`root_category_id` <=> OLD.`root_category_id`) OR NOT(NEW.`default_store_id` <=> OLD.`default_store_id`) OR NOT(NEW.`code` <=> OLD.`code`)) THEN INSERT IGNORE INTO `store_data_exporter_cl` (`entity_id`) VALUES (NEW.`website_id`); END IF;
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_store_group_after_update AFTER UPDATE ON store_group FOR EACH ROW
+
+BEGIN
+
+IF (NOT(NEW.`group_id` <=> OLD.`group_id`) OR NOT(NEW.`website_id` <=> OLD.`website_id`) OR NOT(NEW.`name` <=> OLD.`name`) OR NOT(NEW.`root_category_id` <=> OLD.`root_category_id`) OR NOT(NEW.`default_store_id` <=> OLD.`default_store_id`) OR NOT(NEW.`code` <=> OLD.`code`)) THEN INSERT IGNORE INTO `store_data_exporter_cl` (`entity_id`) VALUES (NEW.`website_id`); END IF;
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -13252,9 +13537,12 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_store_group_after_delete AFTER DELETE ON store_group FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `store_data_exporter_cl` (`entity_id`) VALUES (OLD.`website_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_store_group_after_delete AFTER DELETE ON store_group FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `store_data_exporter_cl` (`entity_id`) VALUES (OLD.`website_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -13301,9 +13589,12 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_store_website_after_insert AFTER INSERT ON store_website FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `store_data_exporter_cl` (`entity_id`) VALUES (NEW.`website_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_store_website_after_insert AFTER INSERT ON store_website FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `store_data_exporter_cl` (`entity_id`) VALUES (NEW.`website_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -13319,9 +13610,12 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_store_website_after_update AFTER UPDATE ON store_website FOR EACH ROW
-BEGIN
-IF (NOT(NEW.`website_id` <=> OLD.`website_id`) OR NOT(NEW.`code` <=> OLD.`code`) OR NOT(NEW.`name` <=> OLD.`name`) OR NOT(NEW.`sort_order` <=> OLD.`sort_order`) OR NOT(NEW.`default_group_id` <=> OLD.`default_group_id`) OR NOT(NEW.`is_default` <=> OLD.`is_default`)) THEN INSERT IGNORE INTO `store_data_exporter_cl` (`entity_id`) VALUES (NEW.`website_id`); END IF;
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_store_website_after_update AFTER UPDATE ON store_website FOR EACH ROW
+
+BEGIN
+
+IF (NOT(NEW.`website_id` <=> OLD.`website_id`) OR NOT(NEW.`code` <=> OLD.`code`) OR NOT(NEW.`name` <=> OLD.`name`) OR NOT(NEW.`sort_order` <=> OLD.`sort_order`) OR NOT(NEW.`default_group_id` <=> OLD.`default_group_id`) OR NOT(NEW.`is_default` <=> OLD.`is_default`)) THEN INSERT IGNORE INTO `store_data_exporter_cl` (`entity_id`) VALUES (NEW.`website_id`); END IF;
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -13337,9 +13631,12 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = '' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER trg_store_website_after_delete AFTER DELETE ON store_website FOR EACH ROW
-BEGIN
-INSERT IGNORE INTO `store_data_exporter_cl` (`entity_id`) VALUES (OLD.`website_id`);
+/*!50003 CREATE*/  /*!50003 TRIGGER trg_store_website_after_delete AFTER DELETE ON store_website FOR EACH ROW
+
+BEGIN
+
+INSERT IGNORE INTO `store_data_exporter_cl` (`entity_id`) VALUES (OLD.`website_id`);
+
 END */;;
 DELIMITER ;
 /*!50003 SET sql_mode              = @saved_sql_mode */ ;
@@ -14219,7 +14516,6 @@ UNLOCK TABLES;
 /*!50001 SET character_set_results     = utf8 */;
 /*!50001 SET collation_connection      = utf8_general_ci */;
 /*!50001 CREATE ALGORITHM=UNDEFINED */
-/*!50013 DEFINER=`root`@`localhost` SQL SECURITY INVOKER */
 /*!50001 VIEW `inventory_stock_1` AS select distinct `legacy_stock_status`.`product_id` AS `product_id`,`legacy_stock_status`.`website_id` AS `website_id`,`legacy_stock_status`.`stock_id` AS `stock_id`,`legacy_stock_status`.`qty` AS `quantity`,`legacy_stock_status`.`stock_status` AS `is_salable`,`product`.`sku` AS `sku` from (`cataloginventory_stock_status` `legacy_stock_status` join `catalog_product_entity` `product` on(`legacy_stock_status`.`product_id` = `product`.`entity_id`)) */;
 /*!50001 SET character_set_client      = @saved_cs_client */;
 /*!50001 SET character_set_results     = @saved_cs_results */;
